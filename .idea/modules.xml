@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/MavenSSM.iml" filepath="$PROJECT_DIR$/MavenSSM.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SSMMaven.iml" filepath="$PROJECT_DIR$/SSMMaven.iml" />
     </modules>
   </component>
 </project>

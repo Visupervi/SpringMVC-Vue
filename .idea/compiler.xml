@@ -7,10 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="MavenSSM" />
+        <module name="SSMMaven" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="MavenSSM" target="1.8" />
+      <module name="SSMMaven" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
