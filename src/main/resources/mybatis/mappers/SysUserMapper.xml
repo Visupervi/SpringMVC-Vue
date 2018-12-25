@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.HopeRun.SSM.Crm.DAO.SysUserMapper">
-  <resultMap id="BaseResultMap" type="com.HopeRun.SSM.Crm.Entity.SysUser">
+<mapper namespace="mybatis.mappers.SysUserMapper">
+  <resultMap id="BaseResultMap" type="com.HopeRun.SSM.Crm.entity.SysUser">
     <id column="user_id" jdbcType="BIGINT" property="userId" />
     <result column="user_code" jdbcType="VARCHAR" property="userCode" />
     <result column="user_name" jdbcType="VARCHAR" property="userName" />
@@ -21,13 +21,13 @@
     delete from sys_user
     where user_id = #{userId,jdbcType=BIGINT}
   </delete>
-  <insert id="insert" parameterType="com.HopeRun.SSM.Crm.Entity.SysUser">
+  <insert id="insert" parameterType="com.HopeRun.SSM.Crm.entity.SysUser">
     insert into sys_user (user_id, user_code, user_name, 
       user_password, user_state)
     values (#{userId,jdbcType=BIGINT}, #{userCode,jdbcType=VARCHAR}, #{userName,jdbcType=VARCHAR}, 
       #{userPassword,jdbcType=VARCHAR}, #{userState,jdbcType=CHAR})
   </insert>
-  <insert id="insertSelective" parameterType="com.HopeRun.SSM.Crm.Entity.SysUser">
+  <insert id="insertSelective" parameterType="com.HopeRun.SSM.Crm.entity.SysUser">
     insert into sys_user
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="userId != null">
@@ -64,7 +64,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.HopeRun.SSM.Crm.Entity.SysUser">
+  <update id="updateByPrimaryKeySelective" parameterType="com.HopeRun.SSM.Crm.entity.SysUser">
     update sys_user
     <set>
       <if test="userCode != null">
@@ -82,7 +82,7 @@
     </set>
     where user_id = #{userId,jdbcType=BIGINT}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.HopeRun.SSM.Crm.Entity.SysUser">
+  <update id="updateByPrimaryKey" parameterType="com.HopeRun.SSM.Crm.entity.SysUser">
     update sys_user
     set user_code = #{userCode,jdbcType=VARCHAR},
       user_name = #{userName,jdbcType=VARCHAR},

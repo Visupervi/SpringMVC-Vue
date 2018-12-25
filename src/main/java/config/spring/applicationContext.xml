@@ -50,10 +50,10 @@
     <!-- 配置Mapper扫描 -->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <!-- 设置Mapper扫描包 -->
-        <property name="basePackage" value="com.HopeRun.SSM.Crm.DAO"/>
+        <property name="basePackage" value="com.HopeRun.SSM.Crm.dao"/>
     </bean>
     <!--配置Service扫描-->
-    <context:component-scan base-package="com.HopeRun.SSM.Crm.Service"/>
+    <context:component-scan base-package="com.HopeRun.SSM.Crm.service"/>
     <!-- 启动@aspectj的自动代理支持-->
     <aop:aspectj-autoproxy />
 </beans>

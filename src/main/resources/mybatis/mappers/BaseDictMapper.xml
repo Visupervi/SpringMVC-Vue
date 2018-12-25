@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.HopeRun.SSM.Crm.DAO.BaseDictMapper">
-  <resultMap id="BaseResultMap" type="com.HopeRun.SSM.Crm.Entity.BaseDict">
+<mapper namespace="mybatis.mappers.BaseDictMapper">
+  <resultMap id="BaseResultMap" type="com.HopeRun.SSM.Crm.entity.BaseDict">
     <id column="dict_id" jdbcType="VARCHAR" property="dictId" />
     <result column="dict_type_code" jdbcType="VARCHAR" property="dictTypeCode" />
     <result column="dict_type_name" jdbcType="VARCHAR" property="dictTypeName" />
@@ -25,7 +25,7 @@
     delete from base_dict
     where dict_id = #{dictId,jdbcType=VARCHAR}
   </delete>
-  <insert id="insert" parameterType="com.HopeRun.SSM.Crm.Entity.BaseDict">
+  <insert id="insert" parameterType="com.HopeRun.SSM.Crm.entity.BaseDict">
     insert into base_dict (dict_id, dict_type_code, dict_type_name, 
       dict_item_name, dict_item_code, dict_sort, 
       dict_enable, dict_memo)
@@ -33,7 +33,7 @@
       #{dictItemName,jdbcType=VARCHAR}, #{dictItemCode,jdbcType=VARCHAR}, #{dictSort,jdbcType=INTEGER}, 
       #{dictEnable,jdbcType=CHAR}, #{dictMemo,jdbcType=VARCHAR})
   </insert>
-  <insert id="insertSelective" parameterType="com.HopeRun.SSM.Crm.Entity.BaseDict">
+  <insert id="insertSelective" parameterType="com.HopeRun.SSM.Crm.entity.BaseDict">
     insert into base_dict
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="dictId != null">
@@ -88,7 +88,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.HopeRun.SSM.Crm.Entity.BaseDict">
+  <update id="updateByPrimaryKeySelective" parameterType="com.HopeRun.SSM.Crm.entity.BaseDict">
     update base_dict
     <set>
       <if test="dictTypeCode != null">
@@ -115,7 +115,7 @@
     </set>
     where dict_id = #{dictId,jdbcType=VARCHAR}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.HopeRun.SSM.Crm.Entity.BaseDict">
+  <update id="updateByPrimaryKey" parameterType="com.HopeRun.SSM.Crm.entity.BaseDict">
     update base_dict
     set dict_type_code = #{dictTypeCode,jdbcType=VARCHAR},
       dict_type_name = #{dictTypeName,jdbcType=VARCHAR},

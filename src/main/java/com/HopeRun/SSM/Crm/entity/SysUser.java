@@ -1,4 +1,4 @@
-package com.HopeRun.SSM.Crm.Entity;
+package com.HopeRun.SSM.Crm.entity;
 
 public class SysUser {
     private Long userId;
