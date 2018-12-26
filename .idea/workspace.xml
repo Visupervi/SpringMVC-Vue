@@ -2,29 +2,48 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="MavenSSM:war" />
+      <artifact name="SSMMaven:war" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8d169798-ab63-407b-ac06-97d7a4eecc17" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/HopeRun/SSM/Crm/controller/UserLoginController.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/HopeRun/SSM/Crm/service/UserLoginService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/HopeRun/SSM/Crm/service/serviceImpl/UserLoginServiceImpl.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/crmWeb/src/components/userLoginVue/userLogin.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/crmWeb/src/servers/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/crmWeb/src/servers/store.js" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/MavenSSM_war.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/MavenSSM_war_exploded.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/SSMMaven_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/SSMMaven_war_exploded.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DbConfig.properties" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/HopeRun/SSM/Crm/DAO/BaseDiceDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/HopeRun/SSM/Crm/dao/BaseDiceDAO.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/HopeRun/SSM/Crm/Entity/BaseDict.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/HopeRun/SSM/Crm/Entity/Customer.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/HopeRun/SSM/Crm/Entity/SysUser.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/config/mybatis/sqlMapperConfig.xml" afterPath="$PROJECT_DIR$/src/main/java/config/mybatis/sqlMapperConfig.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/config/spring/applicationContext.xml" afterPath="$PROJECT_DIR$/src/main/java/config/spring/applicationContext.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/config/springmvc/springmvc.xml" afterPath="$PROJECT_DIR$/src/main/java/config/springmvc/springmvc.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/log4j.properties" afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" afterPath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mappers/BaseDictMapper.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mappers/CustomerMapper.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mappers/SysUserMapper.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/generatorConfig.xml" afterPath="$PROJECT_DIR$/target/classes/generatorConfig.xml" />
+      <change beforePath="$PROJECT_DIR$/SSMMaven.iml" afterPath="$PROJECT_DIR$/SSMMaven.iml" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/config/spring/applicationContext.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/config/springmvc/springmvc.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mybatis/sqlMapperConfig.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mappers/BaseDictMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/HopeRun/SSM/Crm/dao/mappers/BaseDictMapper.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mappers/BaseDictMapper.xml" afterPath="$PROJECT_DIR$/src/main/java/com/HopeRun/SSM/Crm/dao/mappers/BaseDictMapper.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mappers/CustomerMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/HopeRun/SSM/Crm/dao/mappers/CustomerMapper.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mappers/CustomerMapper.xml" afterPath="$PROJECT_DIR$/src/main/java/com/HopeRun/SSM/Crm/dao/mappers/CustomerMapper.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mappers/SysUserMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/HopeRun/SSM/Crm/dao/mappers/SysUserMapper.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mappers/SysUserMapper.xml" afterPath="$PROJECT_DIR$/src/main/java/com/HopeRun/SSM/Crm/dao/mappers/SysUserMapper.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/crmWeb/build/webpack.base.conf.js" afterPath="$PROJECT_DIR$/src/main/webapp/crmWeb/build/webpack.base.conf.js" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/crmWeb/config/index.js" afterPath="$PROJECT_DIR$/src/main/webapp/crmWeb/config/index.js" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/crmWeb/package-lock.json" afterPath="$PROJECT_DIR$/src/main/webapp/crmWeb/package-lock.json" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/crmWeb/package.json" afterPath="$PROJECT_DIR$/src/main/webapp/crmWeb/package.json" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/crmWeb/src/App.vue" afterPath="$PROJECT_DIR$/src/main/webapp/crmWeb/src/App.vue" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/crmWeb/src/components/HelloWorld.vue" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/crmWeb/src/main.js" afterPath="$PROJECT_DIR$/src/main/webapp/crmWeb/src/main.js" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/crmWeb/src/router/index.js" afterPath="$PROJECT_DIR$/src/main/webapp/crmWeb/src/router/index.js" />
+      <change beforePath="$PROJECT_DIR$/target/classes/log4j.properties" afterPath="$PROJECT_DIR$/target/classes/log4j.properties" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/src/main/java/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,120 +53,120 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="generatorConfig.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/generatorConfig.xml">
+      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="38" column="90" lean-forward="false" selection-start-line="38" selection-start-column="90" selection-end-line="38" selection-end-column="90" />
+            <state relative-caret-position="630">
+              <caret line="45" column="50" lean-forward="false" selection-start-line="45" selection-start-column="50" selection-end-line="45" selection-end-column="50" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BaseDictMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mappers/BaseDictMapper.java">
+      <file leaf-file-name="UserLoginController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/HopeRun/SSM/Crm/controller/UserLoginController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BaseDictMapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mappers/BaseDictMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="62">
+              <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
               <folding>
-                <marker date="1545715679837" expanded="true" signature="1156:1270" ph="select from base_dict" />
-                <marker date="1545715679837" expanded="true" signature="1355:1423" ph="delete from base_dict... " />
-                <marker date="1545715679837" expanded="true" signature="1515:1938" ph="insert into base_dict... " />
-                <marker date="1545715679837" expanded="true" signature="3583:4401" ph="update base_dict... " />
-                <marker date="1545715679837" expanded="true" signature="4505:4942" ph="update base_dict... " />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CustomerMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mappers/CustomerMapper.java">
+      <file leaf-file-name="UserLoginService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/HopeRun/SSM/Crm/service/UserLoginService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="237">
+              <caret line="10" column="16" lean-forward="false" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CustomerMapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mappers/CustomerMapper.xml">
+      <file leaf-file-name="UserLoginServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/HopeRun/SSM/Crm/service/serviceImpl/UserLoginServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="242">
+              <caret line="13" column="55" lean-forward="false" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="55" />
               <folding>
-                <marker date="1545715679849" expanded="true" signature="1611:1723" ph="select from customer" />
-                <marker date="1545715679849" expanded="true" signature="1806:1872" ph="delete from customer... " />
-                <marker date="1545715679849" expanded="true" signature="1964:2645" ph="insert into customer... " />
-                <marker date="1545715679849" expanded="true" signature="5096:6437" ph="update customer... " />
-                <marker date="1545715679849" expanded="true" signature="6541:7243" ph="update customer... " />
+                <element signature="imports" expanded="true" />
+                <element signature="e#500#501#0" expanded="true" />
+                <element signature="e#561#562#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="SysUserMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mappers/SysUserMapper.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/HopeRun/SSM/Crm/dao/mappers/SysUserMapper.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="0" column="39" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="39" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SysUserMapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mappers/SysUserMapper.xml">
+      <file leaf-file-name="springmvc.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/config/springmvc/springmvc.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="270">
+              <caret line="9" column="53" lean-forward="false" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="53" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2293">
+              <caret line="191" column="72" lean-forward="false" selection-start-line="191" selection-start-column="57" selection-end-line="191" selection-end-column="72" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="applicationContext.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/config/spring/applicationContext.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="895">
+              <caret line="52" column="67" lean-forward="false" selection-start-line="52" selection-start-column="67" selection-end-line="52" selection-end-column="67" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CustomerMapper.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/HopeRun/SSM/Crm/dao/mappers/CustomerMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="2" column="64" lean-forward="false" selection-start-line="2" selection-start-column="64" selection-end-line="2" selection-end-column="64" />
               <folding>
-                <marker date="1545715679843" expanded="true" signature="847:959" ph="select from sys_user" />
-                <marker date="1545715679843" expanded="true" signature="1042:1108" ph="delete from sys_user... " />
-                <marker date="1545715679843" expanded="true" signature="1199:1453" ph="insert into sys_user... " />
-                <marker date="1545715679843" expanded="true" signature="2585:3067" ph="update sys_user... " />
-                <marker date="1545715679843" expanded="true" signature="3170:3431" ph="update sys_user... " />
+                <marker date="1545809423191" expanded="true" signature="1626:1738" ph="select from customer" />
+                <marker date="1545809423191" expanded="true" signature="1821:1887" ph="delete from customer... " />
+                <marker date="1545809423191" expanded="true" signature="1979:2660" ph="insert into customer... " />
+                <marker date="1545809423191" expanded="true" signature="5111:6452" ph="update customer... " />
+                <marker date="1545809423191" expanded="true" signature="6556:7258" ph="update customer... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BaseDict.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/HopeRun/SSM/Crm/entity/BaseDict.java">
+      <file leaf-file-name="BaseDictMapper.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/HopeRun/SSM/Crm/dao/mappers/BaseDictMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Customer.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/HopeRun/SSM/Crm/entity/Customer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SysUser.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/HopeRun/SSM/Crm/entity/SysUser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-390">
-              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-              <folding />
+            <state relative-caret-position="180">
+              <caret line="6" column="81" lean-forward="false" selection-start-line="6" selection-start-column="81" selection-end-line="6" selection-end-column="81" />
+              <folding>
+                <marker date="1545809423270" expanded="true" signature="1171:1285" ph="select from base_dict" />
+                <marker date="1545809423270" expanded="true" signature="1370:1438" ph="delete from base_dict... " />
+                <marker date="1545809423270" expanded="true" signature="1530:1953" ph="insert into base_dict... " />
+                <marker date="1545809423270" expanded="true" signature="3598:4416" ph="update base_dict... " />
+                <marker date="1545809423270" expanded="true" signature="4520:4957" ph="update base_dict... " />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -157,6 +176,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -193,20 +213,41 @@
         <option value="$PROJECT_DIR$/src/main/java/spring/springmvc.xml" />
         <option value="$PROJECT_DIR$/src/main/java/spring/applicationContext.xml" />
         <option value="$PROJECT_DIR$/src/main/java/config/springmvc/spring/applicationContext.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/java/generatorconfig.xml" />
         <option value="$PROJECT_DIR$/src/main/java/Test/GeneratorSqlmap.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/HopeRun/SSM/Crm/Test/GeneratorSqlmap.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/HopeRun/SSM/Crm/resources/GeneratorSqlmap.java" />
         <option value="$PROJECT_DIR$/src/main/resources/GeneratorSqlmap.java" />
         <option value="$PROJECT_DIR$/src/main/java/config/mybatis/sqlMapperConfig.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/config/spring/applicationContext.xml" />
         <option value="$PROJECT_DIR$/src/main/java/generatorConfig.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/HopeRun/SSM/Crm/DAO/BaseDiceDAO.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mybatis/mappers/BaseDictMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/HopeRun/SSM/Crm/GeneratorSqlmap.java" />
         <option value="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/crmWeb/config/index.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/crmWeb/src/components/userLogin.vue" />
+        <option value="$PROJECT_DIR$/src/main/webapp/crmWeb/src/router/index.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/crmWeb/src/App.vue" />
+        <option value="$PROJECT_DIR$/src/main/webapp/crmWeb/src/components/userLoginVue/userLogin.vue" />
+        <option value="$PROJECT_DIR$/src/main/webapp/crmWeb/build/webpack.base.conf.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/crmWeb/build/utils.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/crmWeb/src/main.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/HopeRun/SSM/Crm/service/userLoginService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/HopeRun/SSM/Crm/service/serviceImpl/userLoginServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/HopeRun/SSM/Crm/controller/userLoginController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/config/spring/applicationContext.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/config/springmvc/springmvc.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/mybatis/mappers/SysUserMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mybatis/mappers/SysUserMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/HopeRun/SSM/Crm/service/serviceImpl/UserLoginServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/HopeRun/SSM/Crm/controller/UserLoginController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/HopeRun/SSM/Crm/dao/mappers/CustomerMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/HopeRun/SSM/Crm/dao/mappers/BaseDictMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/HopeRun/SSM/Crm/dao/mappers/SysUserMapper.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/config/spring/applicationContext.xml" />
       </list>
     </option>
   </component>
@@ -221,6 +262,13 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -260,11 +308,348 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/src/main/webapp/crmWeb/node_modules" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="804" />
     <option name="y" value="96" />
     <option name="width" value="976" />
     <option name="height" value="1038" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>AOP</id>
+          </State>
+          <State>
+            <id>Abstraction issuesJava</id>
+          </State>
+          <State>
+            <id>Android</id>
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Correctness</id>
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Correctness &gt; Messages</id>
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Internationalization</id>
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Lint</id>
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Performance</id>
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Security</id>
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Usability</id>
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Usability &gt; Typography</id>
+          </State>
+          <State>
+            <id>Android Lint for Kotlin</id>
+          </State>
+          <State>
+            <id>Assignment issuesGroovy</id>
+          </State>
+          <State>
+            <id>Assignment issuesJava</id>
+          </State>
+          <State>
+            <id>Assignment issuesJavaScript</id>
+          </State>
+          <State>
+            <id>Bitwise operation issuesJava</id>
+          </State>
+          <State>
+            <id>Bitwise operation issuesJavaScript</id>
+          </State>
+          <State>
+            <id>CSS</id>
+          </State>
+          <State>
+            <id>Class structureJava</id>
+          </State>
+          <State>
+            <id>Cloning issuesJava</id>
+          </State>
+          <State>
+            <id>Code maturity issuesJava</id>
+          </State>
+          <State>
+            <id>Code quality toolsCSS</id>
+          </State>
+          <State>
+            <id>Code quality toolsJavaScript</id>
+          </State>
+          <State>
+            <id>Code style issuesCSS</id>
+          </State>
+          <State>
+            <id>Code style issuesJava</id>
+          </State>
+          <State>
+            <id>Code style issuesJavaScript</id>
+          </State>
+          <State>
+            <id>CodeSpring CoreSpring</id>
+          </State>
+          <State>
+            <id>CoffeeScript</id>
+          </State>
+          <State>
+            <id>Control flow issuesJava</id>
+          </State>
+          <State>
+            <id>Control flow issuesJavaScript</id>
+          </State>
+          <State>
+            <id>Data flow issuesJava</id>
+          </State>
+          <State>
+            <id>Data flow issuesJavaScript</id>
+          </State>
+          <State>
+            <id>Declaration redundancyJava</id>
+          </State>
+          <State>
+            <id>Dependency issuesJava</id>
+          </State>
+          <State>
+            <id>ECMAScript 6 migration aidsJavaScript</id>
+          </State>
+          <State>
+            <id>Encapsulation issuesJava</id>
+          </State>
+          <State>
+            <id>Error handlingGroovy</id>
+          </State>
+          <State>
+            <id>Error handlingJava</id>
+          </State>
+          <State>
+            <id>Error handlingJavaScript</id>
+          </State>
+          <State>
+            <id>Finalization issuesJava</id>
+          </State>
+          <State>
+            <id>FlexUnit inspections</id>
+          </State>
+          <State>
+            <id>Flow type checkerJavaScript</id>
+          </State>
+          <State>
+            <id>GPathGroovy</id>
+          </State>
+          <State>
+            <id>General</id>
+          </State>
+          <State>
+            <id>GeneralJava</id>
+          </State>
+          <State>
+            <id>GeneralJavaScript</id>
+          </State>
+          <State>
+            <id>Google App Engine</id>
+          </State>
+          <State>
+            <id>Google Web Toolkit issues</id>
+          </State>
+          <State>
+            <id>Groovy</id>
+          </State>
+          <State>
+            <id>HTML</id>
+          </State>
+          <State>
+            <id>ImportsJava</id>
+          </State>
+          <State>
+            <id>Inheritance issuesJava</id>
+          </State>
+          <State>
+            <id>Initialization issuesJava</id>
+          </State>
+          <State>
+            <id>Internationalization issues</id>
+          </State>
+          <State>
+            <id>Internationalization issuesJava</id>
+          </State>
+          <State>
+            <id>J2ME issuesJava</id>
+          </State>
+          <State>
+            <id>JBoss Seam issues</id>
+          </State>
+          <State>
+            <id>JSP Inspections</id>
+          </State>
+          <State>
+            <id>JUnit issuesJava</id>
+          </State>
+          <State>
+            <id>Java</id>
+          </State>
+          <State>
+            <id>Java 8Java language level migration aidsJava</id>
+          </State>
+          <State>
+            <id>Java interop issuesKotlin</id>
+          </State>
+          <State>
+            <id>Java language level issuesJava</id>
+          </State>
+          <State>
+            <id>Java language level migration aidsJava</id>
+          </State>
+          <State>
+            <id>JavaBeans issuesJava</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+          <State>
+            <id>JavaScript function metricsJavaScript</id>
+          </State>
+          <State>
+            <id>JavaScript validity issuesJavaScript</id>
+          </State>
+          <State>
+            <id>Javadoc issuesJava</id>
+          </State>
+          <State>
+            <id>Kotlin</id>
+          </State>
+          <State>
+            <id>Memory issuesJava</id>
+          </State>
+          <State>
+            <id>Method metricsJava</id>
+          </State>
+          <State>
+            <id>Modularization issuesJava</id>
+          </State>
+          <State>
+            <id>Naming conventionsJava</id>
+          </State>
+          <State>
+            <id>Numeric issuesJava</id>
+          </State>
+          <State>
+            <id>Other problemsKotlin</id>
+          </State>
+          <State>
+            <id>Packaging issuesJava</id>
+          </State>
+          <State>
+            <id>Performance issuesJava</id>
+          </State>
+          <State>
+            <id>Plugin DevKit</id>
+          </State>
+          <State>
+            <id>Portability issuesJava</id>
+          </State>
+          <State>
+            <id>Potentially confusing code constructsGroovy</id>
+          </State>
+          <State>
+            <id>Potentially confusing code constructsJavaScript</id>
+          </State>
+          <State>
+            <id>Probable bugsCoffeeScript</id>
+          </State>
+          <State>
+            <id>Probable bugsGroovy</id>
+          </State>
+          <State>
+            <id>Probable bugsJava</id>
+          </State>
+          <State>
+            <id>Probable bugsJavaScript</id>
+          </State>
+          <State>
+            <id>Probable bugsKotlin</id>
+          </State>
+          <State>
+            <id>Properties Files</id>
+          </State>
+          <State>
+            <id>RESTful Web Service</id>
+          </State>
+          <State>
+            <id>Redundant constructsKotlin</id>
+          </State>
+          <State>
+            <id>RegExp</id>
+          </State>
+          <State>
+            <id>Security issuesJava</id>
+          </State>
+          <State>
+            <id>SetupSpring CoreSpring</id>
+          </State>
+          <State>
+            <id>Spelling</id>
+          </State>
+          <State>
+            <id>Spring</id>
+          </State>
+          <State>
+            <id>Spring CoreSpring</id>
+          </State>
+          <State>
+            <id>Struts</id>
+          </State>
+          <State>
+            <id>Struts 2Struts</id>
+          </State>
+          <State>
+            <id>Threading issuesGroovy</id>
+          </State>
+          <State>
+            <id>Threading issuesJava</id>
+          </State>
+          <State>
+            <id>TypeScript</id>
+          </State>
+          <State>
+            <id>UI Form Problems</id>
+          </State>
+          <State>
+            <id>Verbose or redundant code constructsJava</id>
+          </State>
+          <State>
+            <id>Visibility issuesJava</id>
+          </State>
+          <State>
+            <id>XML</id>
+          </State>
+          <State>
+            <id>XPath</id>
+          </State>
+          <State>
+            <id>toString() issuesJava</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>SpringKotlinAutowiring</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -284,9 +669,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -325,25 +709,14 @@
               <item name="SSMMaven" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Crm" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SSMMaven" type="b2602c69:ProjectViewProjectNode" />
               <item name="SSMMaven" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Crm" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SSMMaven" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SSMMaven" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -352,40 +725,61 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SSMMaven" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SSMMaven" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="springmvc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SSMMaven" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SSMMaven" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="settings.editor.selected.configurable" value="spring.boot" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="false" />
     <property name="SearchEverywhereHistoryKey" value="ContextLoaderListener&#9;PSI&#9;JAVA://org.springframework.web.context.ContextLoaderListener&#10;DispatcherServlet&#9;PSI&#9;JAVA://org.springframework.web.servlet.DispatcherServlet" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\SSMMaven\src\main\java\com\HopeRun\SSM\Crm\dao\mappers" />
+      <recent name="F:\SSMMaven\src\main\webapp\crmWeb\src\components\userLoginVue" />
+      <recent name="F:\SSMMaven\src\main\webapp\crmWeb\src\assets" />
+      <recent name="F:\SSMMaven\src\main\resources" />
+      <recent name="F:\SSMMaven\src\main\resources\mybatis\mappers" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\SSMMaven\src\main\webapp\crmWeb\src" />
+      <recent name="F:\SSMMaven\src\main\webapp\crmWeb\src\assets\images" />
       <recent name="F:\MavenSSM\src\main\resources" />
       <recent name="F:\MavenSSM\src\main\java\com\HopeRun\SSM\Crm\Test" />
       <recent name="F:\MavenSSM\src" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\SSMMaven\src\main\resources" />
-      <recent name="F:\SSMMaven\src\main\resources\mybatis\mappers" />
-      <recent name="F:\SSMMaven\src\main\java\com\HopeRun\SSM\Crm" />
-      <recent name="F:\MavenSSM\src\main\java" />
-      <recent name="F:\MavenSSM\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -400,7 +794,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.GeneratorSqlmap (1)">
+  <component name="RunManager" selected="Tomcat Server.Tomcat7">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -553,7 +947,7 @@
     <configuration name="Tomcat7" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="MavenSSM:war">
+        <artifact name="SSMMaven:war">
           <settings>
             <option name="CONTEXT_PATH" value="/" />
           </settings>
@@ -617,14 +1011,21 @@
         </SHUTDOWN>
       </ConfigurationWrapper>
       <method>
+        <option name="Make" enabled="false" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="MavenSSM:war" />
+          <artifact name="SSMMaven:war" />
         </option>
       </method>
     </configuration>
     <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATING_POLICY" value="restart-server" />
-      <deployment />
+      <deployment>
+        <file path="$PROJECT_DIR$">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </file>
+      </deployment>
       <server-settings>
         <option name="BASE_DIRECTORY_NAME" value="_SSMMaven" />
       </server-settings>
@@ -727,15 +1128,17 @@
       <workItem from="1545627804752" duration="13451000" />
       <workItem from="1545653806392" duration="614000" />
       <workItem from="1545654435645" duration="9000" />
-      <workItem from="1545654477663" duration="5867000" />
+      <workItem from="1545654477663" duration="18699000" />
+      <workItem from="1545747800287" duration="14055000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41628000" />
+    <option name="totallyTimeSpent" value="68515000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -747,28 +1150,29 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4716981" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5495283" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5035377" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46226415" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900944" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4056604" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3490566" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900944" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29881975" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25912017" sideWeight="0.8128342" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23229614" sideWeight="0.18716578" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -786,95 +1190,40 @@
           <properties />
           <option name="timeStamp" value="7" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/HopeRun/SSM/Crm/controller/UserLoginController.java</url>
+          <line>35</line>
+          <properties />
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/HopeRun/SSM/Crm/service/serviceImpl/UserLoginServiceImpl.java</url>
+          <line>13</line>
+          <properties />
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/HopeRun/SSM/Crm/dao/mappers/SysUserMapper.java</url>
+          <line>13</line>
+          <properties class="com.HopeRun.SSM.Crm.dao.mappers.SysUserMapper" method="selectByUser" />
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="8" />
+      <option name="time" value="13" />
     </breakpoint-manager>
     <watches-manager />
   </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>sysUserMapper.selectByUser(user).toString()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/repository/org/springframework/spring-web/4.3.5.RELEASE/spring-web-4.3.5.RELEASE.jar!/org/springframework/web/context/ContextLoaderListener.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="8" lean-forward="false" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/repository/org/springframework/spring-webmvc/4.3.5.RELEASE/spring-webmvc-4.3.5.RELEASE.jar!/org/springframework/web/servlet/DispatcherServlet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="8" lean-forward="false" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/config/springmvc/springmvc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="9" column="8" lean-forward="false" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/config/spring/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="16" column="52" lean-forward="false" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2790">
-          <caret line="93" column="50" lean-forward="false" selection-start-line="93" selection-start-column="50" selection-end-line="93" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/crmWeb/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/crmWeb/src/App.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2790">
-          <caret line="93" column="50" lean-forward="false" selection-start-line="93" selection-start-column="50" selection-end-line="93" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/crmWeb/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/crmWeb/src/App.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/HopeRun/SSM/Crm/dao/mappers/BaseDictMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -882,7 +1231,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/HopeRun/SSM/Crm/dao/mappers/CustomerMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -890,188 +1239,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/program Files/apache-maven-3.6.0/conf/settings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1590">
-          <caret line="53" column="50" lean-forward="true" selection-start-line="53" selection-start-column="50" selection-end-line="53" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/program Files/apache-maven-3.6.0/conf/settings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="158" column="24" lean-forward="false" selection-start-line="158" selection-start-column="24" selection-end-line="158" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/crmWeb/src/App.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/crmWeb/src/main.js">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/crmWeb/config/test.env.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/crmWeb/.babelrc">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/crmWeb/config/prod.env.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/crmWeb/.gitignore">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/crmWeb/config/dev.env.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/repository/org/springframework/spring-webmvc/4.3.5.RELEASE/spring-webmvc-4.3.5.RELEASE.jar!/org/springframework/web/servlet/DispatcherServlet.class">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/crmWeb/build/check-versions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="8" lean-forward="false" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/DAO/Dao.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/crmWeb/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="-1250">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/repository/org/springframework/spring-webmvc/4.3.5.RELEASE/spring-webmvc-4.3.5.RELEASE.jar!/org/springframework/web/servlet/view/InternalResourceViewResolver.class">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/crmWeb/config/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/repository/org/springframework/spring-web/4.3.5.RELEASE/spring-web-4.3.5.RELEASE.jar!/org/springframework/web/context/ContextLoaderListener.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="8" lean-forward="false" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/repository/org/mybatis/generator/mybatis-generator-core/1.3.7/mybatis-generator-core-1.3.7.jar!/org/mybatis/generator/internal/util/ClassloaderUtility.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/DbConfig.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="25" lean-forward="false" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="870">
-          <caret line="29" column="36" lean-forward="false" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/config/springmvc/springmvc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="15" column="41" lean-forward="false" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SSMMaven.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="10" column="15" lean-forward="false" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/config/spring/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="732">
-          <caret line="49" column="19" lean-forward="false" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/config/mybatis/sqlMapperConfig.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="7" column="49" lean-forward="false" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Program Files (x86)/Java/jdk1.8.0_172/src.zip!/javax/xml/parsers/DocumentBuilderFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="218" column="16" lean-forward="false" selection-start-line="218" selection-start-column="16" selection-end-line="218" selection-end-column="16" />
-          <folding>
-            <element signature="e#8197#8198#0" expanded="false" />
-            <element signature="e#8241#8242#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/repository/org/mybatis/generator/mybatis-generator-core/1.3.7/mybatis-generator-core-1.3.7.jar!/org/mybatis/generator/config/xml/ConfigurationParser.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="64" column="29" lean-forward="true" selection-start-line="64" selection-start-column="29" selection-end-line="64" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/repository/org/mybatis/generator/mybatis-generator-core/1.3.7/mybatis-generator-core-1.3.7.jar!/org/mybatis/generator/api/MyBatisGenerator.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="43" column="24" lean-forward="false" selection-start-line="43" selection-start-column="11" selection-end-line="43" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="187" column="44" lean-forward="true" selection-start-line="187" selection-start-column="44" selection-end-line="187" selection-end-column="44" />
-          <folding />
+        <state relative-caret-position="-930">
+          <caret line="20" column="67" lean-forward="false" selection-start-line="20" selection-start-column="67" selection-end-line="20" selection-end-column="67" />
         </state>
       </provider>
     </entry>
@@ -1083,99 +1282,105 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/DbConfig.properties">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/crmWeb/src/assets/images/images/loginbgc.jpg" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/crmWeb/src/assets/images/images/login.png" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/crmWeb/node_modules/vue-router/types/router.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/crmWeb/node_modules/vue-router/types/index.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
-          <caret line="1" column="34" lean-forward="false" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="37" />
+          <caret line="1" column="32" lean-forward="false" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/crmWeb/src/router/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="1" column="25" lean-forward="false" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/HopeRun/SSM/Crm/GeneratorSqlmap.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/crmWeb/src/servers/store.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding>
-            <element signature="e#477#485#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="528">
+          <caret line="24" column="3" lean-forward="false" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/crmWeb/src/components/HelloWorld.vue" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/crmWeb/src/servers/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="20" column="3" lean-forward="false" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/crmWeb/build/webpack.base.conf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2130">
+          <caret line="80" column="0" lean-forward="false" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/crmWeb/build/webpack.dev.conf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1316">
+          <caret line="34" column="7" lean-forward="false" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/crmWeb/build/webpack.prod.conf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/crmWeb/build/vue-loader.conf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/crmWeb/build/utils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1444">
+          <caret line="101" column="0" lean-forward="false" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/crmWeb/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" column="26" lean-forward="false" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/generatorConfig.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="38" column="90" lean-forward="false" selection-start-line="38" selection-start-column="90" selection-end-line="38" selection-end-column="90" />
+        <state relative-caret-position="480">
+          <caret line="16" column="47" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="63" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mappers/BaseDictMapper.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/mybatis/sqlMapperConfig.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="270">
+          <caret line="9" column="16" lean-forward="true" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mappers/BaseDictMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1545715679837" expanded="true" signature="1156:1270" ph="select from base_dict" />
-            <marker date="1545715679837" expanded="true" signature="1355:1423" ph="delete from base_dict... " />
-            <marker date="1545715679837" expanded="true" signature="1515:1938" ph="insert into base_dict... " />
-            <marker date="1545715679837" expanded="true" signature="3583:4401" ph="update base_dict... " />
-            <marker date="1545715679837" expanded="true" signature="4505:4942" ph="update base_dict... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mappers/CustomerMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mappers/CustomerMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1545715679849" expanded="true" signature="1611:1723" ph="select from customer" />
-            <marker date="1545715679849" expanded="true" signature="1806:1872" ph="delete from customer... " />
-            <marker date="1545715679849" expanded="true" signature="1964:2645" ph="insert into customer... " />
-            <marker date="1545715679849" expanded="true" signature="5096:6437" ph="update customer... " />
-            <marker date="1545715679849" expanded="true" signature="6541:7243" ph="update customer... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mappers/SysUserMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mappers/SysUserMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1545715679843" expanded="true" signature="847:959" ph="select from sys_user" />
-            <marker date="1545715679843" expanded="true" signature="1042:1108" ph="delete from sys_user... " />
-            <marker date="1545715679843" expanded="true" signature="1199:1453" ph="insert into sys_user... " />
-            <marker date="1545715679843" expanded="true" signature="2585:3067" ph="update sys_user... " />
-            <marker date="1545715679843" expanded="true" signature="3170:3431" ph="update sys_user... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/HopeRun/SSM/Crm/entity/BaseDict.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/HopeRun/SSM/Crm/entity/SysUser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
@@ -1183,18 +1388,361 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/HopeRun/SSM/Crm/entity/SysUser.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/HopeRun/SSM/Crm/entity/Customer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-390">
+        <state relative-caret-position="30">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/HopeRun/SSM/Crm/entity/BaseDict.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-288">
           <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/HopeRun/SSM/Crm/entity/Customer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/HopeRun/SSM/Crm/GeneratorSqlmap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="3" column="7" lean-forward="false" selection-start-line="3" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/crmWeb/src/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/crmWeb/src/components/userLoginVue/userLogin.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="11" column="36" lean-forward="false" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/crmWeb/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="5" column="22" lean-forward="true" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/repository/org/springframework/spring-webmvc/4.3.5.RELEASE/spring-webmvc-4.3.5.RELEASE.jar!/org/springframework/web/servlet/config/spring-mvc-4.0.xsd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-907">
+          <caret line="15" column="121" lean-forward="false" selection-start-line="15" selection-start-column="91" selection-end-line="15" selection-end-column="121" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/config/spring/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="10" column="24" lean-forward="true" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/config/springmvc/springmvc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-286">
+          <caret line="8" column="28" lean-forward="false" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config/mybatis/sqlMapperConfig.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="6" column="17" lean-forward="true" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/repository/org/springframework/spring-webmvc/4.3.5.RELEASE/spring-webmvc-4.3.5.RELEASE.jar!/org/springframework/web/servlet/DispatcherServlet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="47" column="46" lean-forward="false" selection-start-line="47" selection-start-column="46" selection-end-line="47" selection-end-column="46" />
+          <folding>
+            <marker date="1545465137291" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1545465137291" expanded="false" signature="155:1983" ph="..." />
+            <marker date="1545465137291" expanded="false" signature="4798:4805" ph=" { " />
+            <marker date="1545465137291" expanded="false" signature="4842:4846" ph=" }" />
+            <marker date="1545465137291" expanded="true" signature="4920:5001" ph="{...}" />
+            <marker date="1545465137291" expanded="true" signature="5079:5146" ph="{...}" />
+            <marker date="1545465137291" expanded="true" signature="5224:5291" ph="{...}" />
+            <marker date="1545465137291" expanded="true" signature="5389:5476" ph="{...}" />
+            <marker date="1545465137291" expanded="true" signature="5550:5613" ph="{...}" />
+            <marker date="1545465137291" expanded="true" signature="5703:5782" ph="{...}" />
+            <marker date="1545465137291" expanded="false" signature="5849:5856" ph=" { " />
+            <marker date="1545465137291" expanded="false" signature="5903:5907" ph=" }" />
+            <marker date="1545465137291" expanded="false" signature="5963:5970" ph=" { " />
+            <marker date="1545465137291" expanded="false" signature="5999:6003" ph=" }" />
+            <marker date="1545465137291" expanded="true" signature="6065:6440" ph="{...}" />
+            <marker date="1545465137291" expanded="true" signature="6507:7052" ph="{...}" />
+            <marker date="1545465137291" expanded="true" signature="7116:7705" ph="{...}" />
+            <marker date="1545465137291" expanded="true" signature="7768:8345" ph="{...}" />
+            <marker date="1545465137291" expanded="true" signature="8410:9377" ph="{...}" />
+            <marker date="1545465137291" expanded="true" signature="9442:10409" ph="{...}" />
+            <marker date="1545465137291" expanded="true" signature="10484:11603" ph="{...}" />
+            <marker date="1545465137291" expanded="true" signature="11680:12371" ph="{...}" />
+            <marker date="1545465137291" expanded="true" signature="12434:13371" ph="{...}" />
+            <marker date="1545465137291" expanded="true" signature="13436:14037" ph="{...}" />
+            <marker date="1545465137291" expanded="true" signature="14083:14209" ph="{...}" />
+            <marker date="1545465137291" expanded="false" signature="14266:14273" ph=" { " />
+            <marker date="1545465137291" expanded="false" signature="14303:14307" ph=" }" />
+            <marker date="1545465137291" expanded="true" signature="14402:14715" ph="{...}" />
+            <marker date="1545465137291" expanded="true" signature="14818:16025" ph="{...}" />
+            <marker date="1545465137291" expanded="true" signature="16112:16187" ph="{...}" />
+            <marker date="1545465137291" expanded="true" signature="16291:18198" ph="{...}" />
+            <marker date="1545465137291" expanded="true" signature="18303:20996" ph="{...}" />
+            <marker date="1545465137291" expanded="true" signature="21096:21203" ph="{...}" />
+            <marker date="1545465137291" expanded="true" signature="21392:22514" ph="{...}" />
+            <marker date="1545465137291" expanded="true" signature="22595:22891" ph="{...}" />
+            <marker date="1545465137291" expanded="false" signature="22740:22795" ph="getLocale() → {" />
+            <marker date="1545465137291" expanded="false" signature="22877:22886" ph="}" />
+            <marker date="1545465137291" expanded="true" signature="22993:23721" ph="{...}" />
+            <marker date="1545465137291" expanded="true" signature="23785:24049" ph="{...}" />
+            <marker date="1545465137291" expanded="true" signature="24141:24626" ph="{...}" />
+            <marker date="1545465137291" expanded="true" signature="24735:25203" ph="{...}" />
+            <marker date="1545465137291" expanded="true" signature="25290:25806" ph="{...}" />
+            <marker date="1545465137291" expanded="true" signature="25962:26900" ph="{...}" />
+            <marker date="1545465137291" expanded="true" signature="27018:28264" ph="{...}" />
+            <marker date="1545465137291" expanded="true" signature="28349:28411" ph="{...}" />
+            <marker date="1545465137291" expanded="true" signature="28550:28857" ph="{...}" />
+            <marker date="1545465137291" expanded="true" signature="29023:29149" ph="{...}" />
+            <marker date="1545465137291" expanded="true" signature="29254:30184" ph="{...}" />
+            <marker date="1545465137291" expanded="true" signature="30252:30424" ph="{...}" />
+            <marker date="1545465137291" expanded="true" signature="30435:30788" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/repository/org/springframework/spring-webmvc/4.3.5.RELEASE/spring-webmvc-4.3.5.RELEASE.jar!/org/springframework/web/servlet/FrameworkServlet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="145" column="18" lean-forward="false" selection-start-line="145" selection-start-column="14" selection-end-line="145" selection-end-column="18" />
+          <folding>
+            <marker date="1545465137291" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1545465137291" expanded="false" signature="155:2676" ph="..." />
+            <marker date="1545465137291" expanded="true" signature="3915:4288" ph="{...}" />
+            <marker date="1545465137291" expanded="true" signature="4361:4790" ph="{...}" />
+            <marker date="1545465137291" expanded="false" signature="4850:4857" ph=" { " />
+            <marker date="1545465137291" expanded="false" signature="4898:4902" ph=" }" />
+            <marker date="1545465137291" expanded="false" signature="4941:4948" ph=" { " />
+            <marker date="1545465137291" expanded="false" signature="4977:4981" ph=" }" />
+            <marker date="1545465137291" expanded="false" signature="5035:5042" ph=" { " />
+            <marker date="1545465137291" expanded="false" signature="5075:5079" ph=" }" />
+            <marker date="1545465137291" expanded="false" signature="5116:5123" ph=" { " />
+            <marker date="1545465137291" expanded="false" signature="5148:5152" ph=" }" />
+            <marker date="1545465137291" expanded="false" signature="5198:5205" ph=" { " />
+            <marker date="1545465137291" expanded="false" signature="5232:5236" ph=" }" />
+            <marker date="1545465137291" expanded="false" signature="5268:5275" ph=" { " />
+            <marker date="1545465137291" expanded="false" signature="5297:5301" ph=" }" />
+            <marker date="1545465137291" expanded="false" signature="5347:5354" ph=" { " />
+            <marker date="1545465137291" expanded="false" signature="5381:5385" ph=" }" />
+            <marker date="1545465137291" expanded="false" signature="5417:5424" ph=" { " />
+            <marker date="1545465137291" expanded="false" signature="5508:5512" ph=" }" />
+            <marker date="1545465137291" expanded="true" signature="5583:5644" ph="{...}" />
+            <marker date="1545465137291" expanded="false" signature="5688:5695" ph=" { " />
+            <marker date="1545465137291" expanded="false" signature="5729:5733" ph=" }" />
+            <marker date="1545465137291" expanded="true" signature="5819:6134" ph="{...}" />
+            <marker date="1545465137291" expanded="true" signature="6213:6282" ph="{...}" />
+            <marker date="1545465137291" expanded="false" signature="6339:6346" ph=" { " />
+            <marker date="1545465137291" expanded="false" signature="6383:6387" ph=" }" />
+            <marker date="1545465137291" expanded="false" signature="6442:6449" ph=" { " />
+            <marker date="1545465137291" expanded="false" signature="6484:6488" ph=" }" />
+            <marker date="1545465137291" expanded="true" signature="6566:6633" ph="{...}" />
+            <marker date="1545465137291" expanded="true" signature="6707:6770" ph="{...}" />
+            <marker date="1545465137291" expanded="true" signature="6840:6899" ph="{...}" />
+            <marker date="1545465137291" expanded="true" signature="6976:7216" ph="{...}" />
+            <marker date="1545465137291" expanded="true" signature="7283:8190" ph="{...}" />
+            <marker date="1545465137291" expanded="true" signature="8254:9495" ph="{...}" />
+            <marker date="1545465137291" expanded="true" signature="9559:9975" ph="{...}" />
+            <marker date="1545465137291" expanded="true" signature="10066:11072" ph="{...}" />
+            <marker date="1545465137291" expanded="true" signature="11171:12122" ph="{...}" />
+            <marker date="1545465137291" expanded="true" signature="12216:12294" ph="{...}" />
+            <marker date="1545465137291" expanded="true" signature="12385:12390" ph="{}" />
+            <marker date="1545465137291" expanded="true" signature="12463:13599" ph="{...}" />
+            <marker date="1545465137291" expanded="true" signature="13743:14752" ph="{...}" />
+            <marker date="1545465137291" expanded="false" signature="14802:14809" ph=" { " />
+            <marker date="1545465137291" expanded="false" signature="14863:14867" ph=" }" />
+            <marker date="1545465137291" expanded="false" signature="14932:14939" ph=" { " />
+            <marker date="1545465137291" expanded="false" signature="14973:14977" ph=" }" />
+            <marker date="1545465137291" expanded="true" signature="15043:15048" ph="{}" />
+            <marker date="1545465137291" expanded="true" signature="15074:15375" ph="{...}" />
+            <marker date="1545465137291" expanded="true" signature="15439:15533" ph="{...}" />
+            <marker date="1545465137291" expanded="true" signature="15590:15595" ph="{}" />
+            <marker date="1545465137291" expanded="true" signature="15621:15932" ph="{...}" />
+            <marker date="1545465137291" expanded="true" signature="16054:16298" ph="{...}" />
+            <marker date="1545465137291" expanded="true" signature="16424:16473" ph="{...}" />
+            <marker date="1545465137291" expanded="true" signature="16600:16649" ph="{...}" />
+            <marker date="1545465137291" expanded="true" signature="16775:16824" ph="{...}" />
+            <marker date="1545465137291" expanded="true" signature="16953:17002" ph="{...}" />
+            <marker date="1545465137291" expanded="true" signature="17126:17660" ph="{...}" />
+            <marker date="1545465137291" expanded="true" signature="17401:17654" ph="{...}" />
+            <marker date="1545465137291" expanded="true" signature="17458:17648" ph="{...}" />
+            <marker date="1545465137291" expanded="true" signature="17782:18001" ph="{...}" />
+            <marker date="1545465137291" expanded="true" signature="18136:19917" ph="{...}" />
+            <marker date="1545465137291" expanded="true" signature="19992:20054" ph="{...}" />
+            <marker date="1545465137291" expanded="true" signature="20212:20374" ph="{...}" />
+            <marker date="1545465137291" expanded="true" signature="20504:20901" ph="{...}" />
+            <marker date="1545465137291" expanded="true" signature="21037:21356" ph="{...}" />
+            <marker date="1545465137291" expanded="true" signature="21498:21996" ph="{...}" />
+            <marker date="1545465137291" expanded="true" signature="22067:22197" ph="{...}" />
+            <marker date="1545465137291" expanded="true" signature="22392:23363" ph="{...}" />
+            <marker date="1545465137291" expanded="true" signature="22434:22441" ph="{}" />
+            <marker date="1545465137291" expanded="true" signature="22521:22992" ph="{...}" />
+            <marker date="1545465137291" expanded="true" signature="23098:23359" ph="{...}" />
+            <marker date="1545465137291" expanded="true" signature="23458:23636" ph="{...}" />
+            <marker date="1545465137291" expanded="true" signature="23497:23504" ph="{}" />
+            <marker date="1545465137291" expanded="false" signature="23569:23578" ph=" { " />
+            <marker date="1545465137291" expanded="false" signature="23626:23632" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="45" column="50" lean-forward="false" selection-start-line="45" selection-start-column="50" selection-end-line="45" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <caret line="4" column="39" lean-forward="false" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/HopeRun/SSM/Crm/service/UserLoginService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="10" column="16" lean-forward="false" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/HopeRun/SSM/Crm/dao/mappers/BaseDictMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="6" column="81" lean-forward="false" selection-start-line="6" selection-start-column="81" selection-end-line="6" selection-end-column="81" />
+          <folding>
+            <marker date="1545809423270" expanded="true" signature="1171:1285" ph="select from base_dict" />
+            <marker date="1545809423270" expanded="true" signature="1370:1438" ph="delete from base_dict... " />
+            <marker date="1545809423270" expanded="true" signature="1530:1953" ph="insert into base_dict... " />
+            <marker date="1545809423270" expanded="true" signature="3598:4416" ph="update base_dict... " />
+            <marker date="1545809423270" expanded="true" signature="4520:4957" ph="update base_dict... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files (x86)/Java/jdk1.8.0_172/src.zip!/java/lang/reflect/InvocationTargetException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/HopeRun/SSM/Crm/controller/UserLoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="62">
+          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/HopeRun/SSM/Crm/service/serviceImpl/UserLoginServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="13" column="55" lean-forward="false" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#500#501#0" expanded="true" />
+            <element signature="e#561#562#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2293">
+          <caret line="191" column="72" lean-forward="false" selection-start-line="191" selection-start-column="57" selection-end-line="191" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/HopeRun/SSM/Crm/dao/mappers/SysUserMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="16" column="17" lean-forward="false" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+          <folding>
+            <marker date="1545809968965" expanded="true" signature="863:975" ph="select from sys_user" />
+            <marker date="1545809968965" expanded="true" signature="1116:1215" ph="SELECT * FRO... SYSTEM_USER" />
+            <marker date="1545809968965" expanded="true" signature="1298:1364" ph="delete from sys_user... " />
+            <marker date="1545809968965" expanded="true" signature="1455:1709" ph="insert into sys_user... " />
+            <marker date="1545809968965" expanded="true" signature="2841:3323" ph="update sys_user... " />
+            <marker date="1545809968965" expanded="true" signature="3426:3687" ph="update sys_user... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/HopeRun/SSM/Crm/dao/mappers/SysUserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="39" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config/springmvc/springmvc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="9" column="53" lean-forward="false" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/HopeRun/SSM/Crm/dao/mappers/CustomerMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="2" column="64" lean-forward="false" selection-start-line="2" selection-start-column="64" selection-end-line="2" selection-end-column="64" />
+          <folding>
+            <marker date="1545809423191" expanded="true" signature="1626:1738" ph="select from customer" />
+            <marker date="1545809423191" expanded="true" signature="1821:1887" ph="delete from customer... " />
+            <marker date="1545809423191" expanded="true" signature="1979:2660" ph="insert into customer... " />
+            <marker date="1545809423191" expanded="true" signature="5111:6452" ph="update customer... " />
+            <marker date="1545809423191" expanded="true" signature="6556:7258" ph="update customer... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config/spring/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="895">
+          <caret line="52" column="67" lean-forward="false" selection-start-line="52" selection-start-column="67" selection-end-line="52" selection-end-column="67" />
           <folding />
         </state>
       </provider>
@@ -1205,7 +1753,7 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>MavenSSM:war</last-edited>
+          <last-edited>SSMMaven:war exploded</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1218,7 +1766,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>Spring</last-edited>
+          <last-edited>Web (SSMMaven)|Web</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1253,12 +1801,11 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>SSMMaven</last-edited>
+          <last-edited>Web|SSMMaven</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
