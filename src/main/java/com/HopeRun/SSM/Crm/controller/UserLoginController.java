@@ -2,18 +2,12 @@ package com.HopeRun.SSM.Crm.controller;
 
 import com.HopeRun.SSM.Crm.entity.SysUser;
 import com.HopeRun.SSM.Crm.service.UserLoginService;
-import com.HopeRun.SSM.Crm.service.serviceImpl.UserLoginServiceImpl;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
-import org.apache.ibatis.logging.LogFactory;
 import org.apache.log4j.Logger;
-import org.apache.log4j.spi.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 @Controller
 @RequestMapping("/apis")
@@ -23,16 +17,17 @@ public class UserLoginController {
   private UserLoginService userLoginService;
 
 
-  @RequestMapping("/userLogin")
+  @RequestMapping(value = "/userLogin",method= RequestMethod.POST)
   @ResponseBody
-  public String userLogin(@RequestParam String userName,@RequestParam String userPassWord) {
-//    JSONObject jsonObject = JSON.parseObject(string);
+  public String userLogin(@RequestBody String string) {
+    JSONObject jsonObject = JSON.parseObject(string);
 
-//    logger.info(jsonObject);
+    logger.info(jsonObject);
     logger.info("111111111111");
     SysUser sysUser = new SysUser();
-    sysUser.setUserName(userName);
-    sysUser.setUserPassword(userPassWord);
+    sysUser.setUserName(jsonObject.getString("userName"));
+    sysUser.setUserPassword(jsonObject.getString("userPassword"));
+    logger.info(sysUser.toString());
     return  returnResult(userLoginService.login(sysUser));
 
   }

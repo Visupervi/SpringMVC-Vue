@@ -5,6 +5,6 @@
 <configuration>
     <!-- 别名 -->
     <typeAliases>
-        <package name="com.HopeRun.SSM.Crm.entity"/>
+        <package name="com.HopeRun.SSM.Crm.entity.*"/>
     </typeAliases>
 </configuration>
