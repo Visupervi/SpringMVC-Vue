@@ -106,7 +106,8 @@ Axios.interceptors.response.use(
         }
       }
     }
-    let errorInfo =  error.data.error ? error.data.error.message : error.data;
+    // let errorInfo =  error.data.error ? error.data.error.message : error.data;
+    let errorInfo = error.data && error.data.error && error.data.error.message || error.data;
     return Promise.reject(errorInfo);
   }
 );

@@ -5,7 +5,7 @@ import com.HopeRun.SSM.Crm.service.UserLoginService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-@Service//("userService")
+@Service
 public class UserLoginServiceImpl implements UserLoginService {
   @Autowired
   private SysUserMapper sysUserMapper;
