@@ -102,11 +102,18 @@
       loginForm(){
         console.log(this.ruleLogin.userName);
         console.log(this.ruleLogin.userPwd);
-        this.$http.post("apis/userLogin",
+        this.$http(
           {
-            userName:this.ruleLogin.userName,
-            userPassword:this.ruleLogin.userPwd
-          })
+            type:'post',
+            url:'apis/userLogin',
+            data:{
+              userName:this.ruleLogin.userName,
+              userPassword:this.ruleLogin.userPwd
+            }
+          }
+        ).then((res)=>{
+          console.log(res)
+        })
       }
     }
   }

@@ -4,7 +4,6 @@ import java.util.Date;
 
 public class Customer {
     private Long custId;
-
     private String custName;
 
     private Long custUserId;

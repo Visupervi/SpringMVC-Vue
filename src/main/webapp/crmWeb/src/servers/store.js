@@ -9,17 +9,31 @@ const token = JSON.parse(localStorage.getItem('token') || null);
 const store = new Vuex.Store({
   state(){
     return {
-      token: token
+      userInfo:{
+        token: token,
+        userName:"",
+        lifeTime:null
+      }
     }
   },
   mutations:{
-    setToken(state,token){
-      state.token = token;
-      localStorage.setItem('token',JSON.stringify(token));
+    setToken(state,token,name){
+      state.userInfo.token = token;
+      state.userInfo.lifeTime = (new Date()).getTime();
+      state.userInfo.userName = name;
+      localStorage.setItem('userInfo',JSON.stringify(state.userInfo));
     },
     delToken(state){
       state.token = null;
-      localStorage.removeItem('token');
+      localStorage.removeItem('userInfo');
+    }
+  },
+  getters:{
+    getToken(){
+      if(!localStorage.getItem("userInfo")){
+        localStorage.setItem("userInfo",{})
+      }
+      return JSON.parse(localStorage.getItem("userInfo"));
     }
   }
 });
