@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import {Message} from 'element-ui'
-import userLogin from '../components/userLoginVue/userLogin.vue'
+import userLoginVue from '../components/userLoginVue/userLogin'
 import listVue from '../components/listVue/listVue'
 import bodyVue from '../components/bodyVue/bodyVue'
 
@@ -12,7 +12,7 @@ const router = new Router({
     {
       path: '/',
       name: 'userLogin',
-      component: userLogin,
+      component: userLoginVue,
       meta: {
         requireLogin: false
       },

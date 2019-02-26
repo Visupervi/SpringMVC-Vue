@@ -33,7 +33,7 @@ const store = new Vuex.Store({
       if(!localStorage.getItem("userInfo")){
         localStorage.setItem("userInfo",{})
       }
-      return localStorage.getItem("userInfo");
+      return JSON.parse(localStorage.getItem("userInfo"));
     }
   }
 });
