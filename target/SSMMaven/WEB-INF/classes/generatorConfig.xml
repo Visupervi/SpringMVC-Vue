@@ -5,7 +5,7 @@
 <generatorConfiguration>
     <properties resource="DbConfig.properties"></properties>
     <!--<classPathEntry location="${jdbc.driverLocation}"/>-->
-    <classPathEntry location="D:\repository\mysql\mysql-connector-java\8.0.11\mysql-connector-java-8.0.11.jar" />
+    <classPathEntry location="/Users/Visupervi/.m2/repository/mysql/8.0.19/mysql-connector-java-8.0.19.jar" />
     <context id="MysqlTable2" targetRuntime="Mybatis3">
 
         <commentGenerator>

@@ -9,4 +9,1257 @@
     <div id="app"></div>
     <!-- built files will be auto injected -->
   </body>
+  <script>
+    async function initDiv() {
+      $("#ptjb").empty();
+      var ptjb_left = $('<div class="ptjb_left"></div>')
+      var bussinessMain = $('<div class="business_activity_main"></div>');
+      var bussinessTit = $('<div class="bussiness_tit">今日关键数据</div>');
+      var busUl = $('<ul class="bussiness_char_list"></ul>');
+      bussinessMain.append(bussinessTit);
+      bussinessMain.append(busUl)
+      ptjb_left.append(bussinessMain);
+
+
+      var chartsEnterMain = $('<div class="char_enter_main"></div>');
+      var chartsLeft = $('<div class="char_left"></div>');
+      var chartTop = $('<div class="chart_top"></div>')
+      var chartsTit = $('<div class="char_tit" id="mouthActiveNum">月份活跃度</div>')
+      var chartsChangeDiv = $('<input id="time" value="1" class="changeselect" />');
+      var chartsLeftdiv = $('<div class="charts_buss"><div style="height:200px;" id="business_char"></div></div>')
+      chartsLeft.append(chartTop);
+      chartTop.append(chartsTit)
+      chartTop.append(chartsChangeDiv);
+
+      chartsLeft.append(chartsLeftdiv)
+      chartsEnterMain.append(chartsLeft);
+      ptjb_left.append(chartsEnterMain);
+
+      var activeMain = $('<div class="tab_line_char_main"></div>')
+      var activeChar = $(' <div class="line_char_right"></div>');
+      var activeTop = $('<div class="chart_top"></div>')
+      var activeTit = $('<div class="char_tit">运营看板</div>')
+      var activeChage = $('<input id="moduleClickNum" value="1" class="changeselect changeselect2" />');
+      var tabLeftUl = $('<ul id="tab_change" class="active_ul"></ul>');
+      var tabLeftLi = getAllActiveChar();
+      var activeCharts = $('<div class="active_buss" id="moduleChange"></div>');
+      activeChar.append(activeTop);
+      activeTop.append(activeTit)
+      activeTop.append(activeChage);
+      tabLeftUl.append(tabLeftLi);
+      activeChar.append(tabLeftUl);
+      activeChar.append(activeCharts);
+
+      activeMain.append(activeChar);
+      ptjb_left.append(activeMain);
+      $("#ptjb").append(ptjb_left);
+      //renderData();
+      var ptjb_right = $('<div class="ptjb_right"></div>')
+
+      var enterRightMain = $('<div class="enter_right_main"></div>');
+      var enetrRightTop = $('<div class="enter_top"></div>')
+      var enterRifgrTit = $('<div class="enter_title">快捷入口</div>');
+      var enterRightDel=$('<div class="enter_delete" onclick="toWelcomeType2()"><i class="k-icon k-i-rows"></i></div>')
+      var enterRifgrUl = $('<ul class="enter_link"></ul>');
+      getAllEnterList();
+      //var enterLi=$('<li class="enter_last_li" onclick="addEnter();"><div class="enter_link_each"><div class="enter_img enter_img_last">+</div><div class="enter_link_tit">更多</div></div></li>')
+
+      enetrRightTop.append(enterRifgrTit)
+      enetrRightTop.append(enterRightDel);
+      //enterRifgrUl.append(enterRightLi);
+      //enterRifgrUl.append(enterLi);
+
+      var lianxiUs = $('<div class="abouts_us_container"></div>');
+      var lianxiUsTit = $('<div class="abouts_us_tit">联系我们</div>');
+      var lianxiUsTop = $('<div class="shouqian">售前咨询：<span>400-017-5885</span></div>');
+      var lianxiUsBtm = $('<div class="shouhou">售后服务：<span>400-994-5885</span></div>')
+      enterRightMain.append(enetrRightTop)
+      enterRightMain.append(enterRifgrUl);
+      ptjb_right.append(enterRightMain);
+      $("#ptjb").append(ptjb_right);
+      lianxiUs.append(lianxiUsTit)
+      lianxiUs.append(lianxiUsTop)
+      lianxiUs.append(lianxiUsBtm)
+      ptjb_right.append(lianxiUs)
+      getURLByEngineId();
+      getAllBussinessList();
+      getChange();
+      renderData();
+      getPostMessage();
+      let target = document.querySelector(".ptjb_right");
+      getCarouselData().then(res => {
+        let evenArr = [];
+        let oddArr = [];
+        if(res){
+          setTimeout(() => {
+            if(res.dataObject.length >= 1){
+              for (let i = 0; i < res.dataObject.length; i++) {
+                i % 2 === 0 ? evenArr.push(res.dataObject[i]) : oddArr.push(res.dataObject[i]);
+              }
+              console.log(evenArr,oddArr);
+              //if(oddArr.length >= 1){
+              //  getData(target, 'adcarousel', timer1, index1, num1, oddArr, 63000);
+              //}else{
+              //getData(target, 'adcarousel', timer1, index1, num1, evenArr, 63000);
+              //clearInterval(timer1)
+              //}
+              //}
+//else {
+              //getData(target, 'carousel', timer, index2, num,res.dataObject,60000);
+              //clearInterval(timer);
+              if (oddArr.length >= 1) {
+                let interval;
+                if (oddArr.length === 1) {
+                  interval = 1000000
+                } else {
+                  interval = 60000
+                }
+                getData(target, 'adcarousel', timer1, index1, num1, oddArr, interval);
+              }
+              if (evenArr.length >= 1) {
+                let delay;
+                if (evenArr.length === 1) {
+                  delay = 1000000;
+                } else {
+                  delay = 63000
+                }
+                getData(target, 'carousel', timer1, index1, num1, evenArr, delay);
+              }
+
+            }
+
+
+          }, 10)
+        }
+
+      }).catch(err =>{console.log(err)})
+    }
+
+    //
+    let carouselWrap = document.querySelector('.carouselWrap');
+    let num = 0;
+    let index2 = 1;
+    let timer,timer1;
+    let num1 = 0;
+    let index1 = 1;
+    function autoPLay(len, target, width,index,num,className,step) {
+      if(className === 'carousel'){
+        window.index = index;
+      }else{
+        window.index1 = index;
+      }
+      return  setInterval(() => {
+        index++;
+        num++;
+        if(className === 'carousel'){
+          window.index = index;
+        }else{
+          window.index1 = index;
+        }
+
+        if (index >= len) {
+          target.style.left = -width + 'px';
+          index = 2;
+          if(className === 'carousel'){
+            window.index = index;
+          }else{
+            window.index1 = index;
+          }
+        }
+        animate(target, {left: -width * index}, () => {
+        });
+
+      }, step)
+    }
+    function getData(target, className, timer, index, num, arr,step) {
+      let ul;
+      let lis;
+      let imgWidth;
+      createCarousel(arr, target, className, () => {
+        setTimeout(() => {
+          ul = document.querySelector(`.${className} .ul`);
+          lis = ul.children;
+          imgWidth = lis[0].offsetWidth;
+          ul.style.width = imgWidth * ul.children.length + 'px';
+          timer = autoPLay(lis.length, ul, imgWidth, index, num,className,step);
+          document.querySelector(`.${className}`).addEventListener('mouseenter', () => {
+            clearInterval(timer);
+          });
+          document.querySelector(`.${className}`).addEventListener('mouseleave', (e, index) => {
+            let id;
+            if (className === 'carousel') {
+              id = window.index
+            } else {
+              id = window.index1
+            }
+
+            timer = autoPLay(lis.length, ul, imgWidth, id, num, className,step)
+          });
+        }, 10)
+      })
+    }
+
+
+    //获取轮播数据
+
+    function getCarouselData(data = {}) {
+      return _ajax({
+        url: 'http://bms.chaojidaogou.com/shopguide/api/queryAdvertByVzvk',
+        type: 'get',
+        data: {accessToken: getQueryToken('accessToken')}
+      })
+    }
+
+    //创建轮播图模块
+    function createCarousel(arr, target,className, callback) {
+      try {
+        console.log(window.location.host);
+        let carouselDiv = document.createElement('div');
+        carouselDiv.className = className;
+        let ul = document.createElement('ul');
+        ul.className = 'ul';
+        let fragment = document.createDocumentFragment();
+        for (let i = 0; i < arr.length; i++) {
+          let li = document.createElement('li');
+          let a = document.createElement('a');
+          let img = document.createElement('img');
+          img.src = arr[i].mainImg;
+
+          a.href = `http://bms.chaojidaogou.com/h5-mb-collections/advertisementDetails/src/advertisementDetails.html?accessToken=${getQueryToken('accessToken')}&mainId=${arr[i].mainId}`;
+// window.open('url链接', '_blank');
+          a.target = "_blank"
+          a.appendChild(img);
+          li.appendChild(a);
+          fragment.appendChild(li)
+        }
+        fragment.appendChild(fragment.children[0].cloneNode(true));
+        fragment.insertBefore(fragment.children[arr.length - 1].cloneNode(true), fragment.firstChild);
+        ul.appendChild(fragment);
+        carouselDiv.appendChild(ul);
+        target.appendChild(carouselDiv);
+        callback();
+      } catch (e) {
+
+      }
+
+    }
+
+
+
+    //轮播动画实现
+    /**
+     *
+     * @type {string}
+     */
+    //封装 能够让 任意对象 的指定属性 变到指定值 的动画函数
+    function animate(obj, json, fn) {
+      clearInterval(obj.timer);
+      obj.timer = setInterval(function () {
+        let flag = true;
+        let leader;
+        let target;
+        for (let k in json) {
+          leader = 0;
+          if (k === "opacity") {//特殊处理
+            //var leader = parseInt(getStyle(obj, k)) || 0;
+            leader = getStyle(obj, k) * 100;//1
+            // 0 || 1 结果是1 那么如果透明度当前的值是0 就会变成1
+            //所以这里不能给默认值 而且也没有必要
+            //透明度没有单位px 所以也不用parseInt 参与运算自动变为数字
+            target = json[k] * 100;//0.5
+            let step = (target - leader) / 10;//0.5-1=-0.5
+            step = step > 0 ? Math.ceil(step) : Math.floor(step);//-1
+            leader = leader + step;
+            //obj.style[k] = leader + "px";
+            obj.style[k] = leader / 100;//opacity没有单位
+          } else if (k === "zIndex") {
+            obj.style.zIndex = json[k];//无需渐变 直接设置即可
+          } else {
+            leader = parseInt(getStyle(obj, k)) || 0;
+            target = json[k];
+            let step = (target - leader) / 10;
+            step = step > 0 ? Math.ceil(step) : Math.floor(step);
+            leader = leader + step;
+            obj.style[k] = leader + "px";
+            if (step !== 0) {
+              flag = false;
+            }
+          }
+          if (leader !== target) {
+            flag = false;
+          }
+        }
+        if (flag) {
+          clearInterval(obj.timer);
+          if (fn) {//如果有才调用
+            fn();//动画执行完成后执行
+          }
+        }
+      }, 15);
+    }
+
+    function getStyle(obj, attr) {
+      if (window.getComputedStyle) {
+        return window.getComputedStyle(obj, null)[attr];
+      } else {
+        return obj.currentStyle[attr];
+      }
+    }
+
+    //封装ajax
+
+    /**
+     * 定义ajax
+     */
+    function _ajax(options) {
+      // body...
+      try {
+        // statements
+        options = options || {};
+        return new Promise((resolve, reject) => {
+          let xhr;
+          let promise;
+          if (window.XMLHttpRequest) {
+            xhr = new XMLHttpRequest();
+          } else {
+            xhr = new ActiveXObject('Microsoft.XMLHTTP');
+          }
+          if (options.type.toLowerCase() === 'get') {
+            options.url = options.url + '?' + params(options.data);
+            options.data = null;
+          } else {
+            options.data = params(options.data);
+          }
+          xhr.open(options.type, options.url);
+
+          if (options.type.toLowerCase() === 'post') {
+            xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+          }
+          xhr.send(options.data);
+          xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4) {
+              if (xhr.status === 200 || xhr.status === 304) {
+                let data = JSON.parse(xhr.responseText);
+                resolve.call(undefined, data);
+              } else {
+                reject.call(undefined, xhr.status);
+              }
+            }
+          }
+        })
+      } catch (e) {
+        // statements
+        console.log(e);
+      }
+
+    }
+
+    //获取token的值
+    function getQueryToken(name) {
+      var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+      var r = window.location.search.substr(1).match(reg);
+      if (r != null) return unescape(r[2]);
+      return null;
+    }
+
+
+    function params(options) {
+      var str = "";
+      for (var attr in options) {
+        str += attr + "=" + options[attr] + "&";
+      }
+      return str.slice(0, -1);
+    }
+
+
+    var engineId = "a4fcc57b-d910-444d-a71e-54850c3fef0c,074f6d9b-218d-4e51-94b3-e07359a78792,5159d730-0266-4bfe-80ce-b25b1209cc87,768deba1-bef6-479c-a76c-6026d09030e4,cd01fc19-0632-4bef-8322-7a39b0b9bed1,3da3da78-dd56-42aa-aee5-6941a85dee10,9320f60f-cd12-4d63-9d76-2d3d8a3d58ec,07603c47-8621-41ef-b114-4f764b86cc2c,264d05ab-65eb-4f63-99ea-b35a9fdc7f3a";
+    var EngineIdToURL = [];
+
+    function getURLByEngineId() {
+      var accessToken = getQueryString("accessToken");
+      if (accessToken.indexOf("_xnyqt_web") == -1 && accessToken.indexOf("_gzsy_web") == -1 && accessToken.indexOf("_gdxs_web") == -1 && accessToken.indexOf("_cqsh_web") == -1 &&
+        accessToken.indexOf("_zgsy_web") == -1 &&
+        accessToken.indexOf("_dgsh_web") == -1 &&
+        accessToken.indexOf("_cqxs_web") == -1 &&
+        accessToken.indexOf("_hnxs_web") == -1 &&
+        accessToken.indexOf("_ynsh_web") == -1 &&
+        accessToken.indexOf("_fssh_web") == -1 &&
+        accessToken.indexOf("_hebsh_web") == -1) {
+        $(".ptjb_right").show();
+      } else {
+        $(".ptjb_right").hide();
+      }
+      var url = rootUrl + "report/engine/queryengineurllist.do?accessToken=" + accessToken + "&engineIds=" + engineId;
+      $.ajax({
+        url: url,
+        dataType: "json",
+        type: 'get',
+        async: false,
+        success: function (result) {
+          if (result.isSucceed) {
+            EngineIdToURL = result.data;
+          } else {
+            console.log(result.message)
+          }
+        },
+        error: function (result) {
+          console.log(result)
+        }
+      });
+    }
+
+    function throttle(fun, delay) {
+      var last, deferTimer
+      return function (args) {
+        var that = this
+        var _args = arguments
+        var now = +new Date()
+        if (last && now < last + delay) {
+          clearTimeout(deferTimer)
+          deferTimer = setTimeout(function () {
+            last = now
+            fun.apply(that, _args)
+          }, delay)
+        } else {
+          last = now
+          fun.apply(that, _args)
+        }
+      }
+    }
+
+    function getPostMessage() {
+      var msgHandle = function (e) {
+        if (JSON.parse(e.data)["refresh"] == true) {
+          throttle(getAllEnterList(), 1000)
+        }
+      }
+      if (window.addEventListener) {
+        window.addEventListener("message", msgHandle, false)
+      } else if (window.attachEvent) {
+        window.attachEvent('message', msgHandle, false)
+      }
+    }
+
+    function getAllBussinessList() {
+      var engineId = "a4fcc57b-d910-444d-a71e-54850c3fef0c";
+      var accessToken = getQueryString("accessToken");
+      //var url=rootUrl+"report/engine/fetchdata.do?engineId="+engineId+"&accessToken="+accessToken;
+      var getUrl = "";
+      if (EngineIdToURL) {
+        for (var i = 0; i < EngineIdToURL.length; i++) {
+          if (engineId == EngineIdToURL[i].id) {
+            getUrl = EngineIdToURL[i].webUrl.replace("{###token###}", accessToken);
+          }
+        }
+      }
+      var url = getUrl;
+      $.ajax({
+        url: url,
+        contentType: "application/json; charset=utf-8",
+        type: "get",
+        dataType: 'json',
+        success: function (res) {
+          if (res.isSucceed) {
+            var newList = res.data.data.rows;
+            var login_rate, gold_num, exchang, learn_seconds, finish_per;
+            for (var i = 0; i < newList.length; i++) {
+              if (newList[i].finish_per == "login_rate") {
+                login_rate = newList[i].login_rate + "%";
+              }
+              if (newList[i].finish_per == "recovery") {
+                gold_num = newList[i].login_rate;
+              }
+              if (newList[i].finish_per == "exchange") {
+                exchang = newList[i].login_rate;
+              }
+              if (newList[i].finish_per == "learn_seconds") {
+                learn_seconds = newList[i].login_rate;
+              }
+              if (newList[i].finish_per == "finish_per") {
+                finish_per = newList[i].login_rate;
+              }
+            }
+            var listNum = [
+              {
+                login_rate: login_rate,
+                gold_num: gold_num,
+                exchang: exchang,
+                learn_seconds: learn_seconds,
+                finish_per: finish_per
+              }
+            ];
+            var busLi = '';
+            busLi += '<li class="bus_login_bg"><div class="bus_char_each"><div class="bus_char_left"><div class="bus_char_tit"><span class="bus_login">登录率</span></div><div class="bus_char_num">' + listNum[0].login_rate + '</div></div><div class="bus_char_right"></div></div></li>';
+            busLi += '<li class="bus_gold_bg"><div class="bus_char_each"><div class="bus_char_left"><div class="bus_char_tit"><span class="bus_monery">昨日发出金币/回收金币</span></div><div class="bus_char_num">' + listNum[0].gold_num + '/' + listNum[0].exchang + '</div></div><div class="bus_char_right"></div></div></li>';
+            busLi += '<li class="bus_learn_bg"><div class="bus_char_each"><div class="bus_char_left"><div class="bus_char_tit"><span class="bus_learn">用户学习时长</span></div><div class="bus_char_num">' + listNum[0].learn_seconds + '<span>分钟</span></div></div><div class="bus_char_right"></div></li>';
+            busLi += '<li class="bus_fini_bg"><div class="bus_char_each"><div class="bus_char_left"><div class="bus_char_tit"><span class="bus_fini">完成任务人次</span></div><div class="bus_char_num">' + listNum[0].finish_per + '</div></div><div class="bus_char_right"></div></li>';
+            $(".bussiness_char_list").append($(busLi));
+          } else {
+            alert(res.message)
+          }
+        },
+        error: function (msg) {
+          alert(msg.message)
+        }
+      })
+    }
+
+    function getChange() {
+      var data = [
+        {text: "昨日", value: 1},
+        {text: "30天", value: 3}
+      ];
+      $("#time").kendoDropDownList({
+        dataTextField: "text",
+        dataValueField: "value",
+        dataSource: data,
+        index: 0,
+        change: chartChange
+      });
+      var getMouth = Number(new Date().getMonth()) + 1;
+      $("#mouthActiveNum").text(getMouth + "月份活跃度");
+      renderActiveData(1);
+    }
+
+    function chartChange() {
+      var value = Number($("#time").val());
+      renderActiveData(value)
+    }
+
+    function renderActiveData(parme) {
+      var engineId = "074f6d9b-218d-4e51-94b3-e07359a78792";
+      if (parme == 1) {
+        engineId = "074f6d9b-218d-4e51-94b3-e07359a78792";
+      } else if (parme == 2) {
+        engineId = "5159d730-0266-4bfe-80ce-b25b1209cc87";
+      } else if (parme == 3) {
+        engineId = "768deba1-bef6-479c-a76c-6026d09030e4";
+      }
+      var accessToken = getQueryString("accessToken");
+      //var url=rootUrl+"report/engine/fetchdata.do?engineId="+engineId+"&accessToken="+accessToken;\\
+      var getUrl = "";
+      if (EngineIdToURL) {
+        for (var i = 0; i < EngineIdToURL.length; i++) {
+          if (engineId == EngineIdToURL[i].id) {
+            getUrl = EngineIdToURL[i].webUrl.replace("{###token###}", accessToken);
+          }
+        }
+      }
+      var url = getUrl;
+      $.ajax({
+        url: url,
+        contentType: "application/json; charset=utf-8",
+        data: JSON.stringify(
+          {
+            "pageIndex": 1,
+            "pageSize": 30,
+            "conditionValues": {"stm": Number(parme)}
+          }
+        ),
+        type: "post",
+        dataType: 'json',
+        success: function (res) {
+          if (res.isSucceed) {
+            var rows = res.data.data.rows;
+            var rotation = 0;
+            var seriesData = [];
+            var cate = [];
+            var tit = "";
+            if (parme == 1) {
+              for (var i = 0; i < rows.length; i++) {
+                seriesData.push(rows[i].login_hour);
+                cate.push(rows[i].login_rate);
+              }
+              tit = "昨日登录率活跃度";
+              rotate = 0;
+            } else if (parme == 2) {
+              for (var i = 0; i < rows.length; i++) {
+                var subStr = (rows[i].login_date).substring(5, 11);
+                var otherSub = rows[i].login_hour;
+                subStr = subStr + otherSub;
+                seriesData.push(subStr);
+                cate.push(rows[i].login_rate);
+              }
+              tit = "近7日登录率活跃度";
+              rotate = 40;
+            } else {
+              for (var i = 0; i < rows.length; i++) {
+                var subStr = (rows[i].login_date).substring(5, 11);
+                seriesData.push(subStr);
+                cate.push(rows[i].login_rate);
+              }
+              tit = "30日登录率活跃度";
+              rotate = 40;
+            }
+            var series = [
+              {
+
+                symbolSize: 1, //折线点的大小
+                name: tit,
+                type: 'line',
+                smooth: true,
+                itemStyle: {normal: {areaStyle: {type: 'default'}}},
+                data: cate
+              }
+            ];
+            getBussinessLineChart(tit, series, seriesData, rotate);
+          } else {
+            console.log(res.message)
+          }
+        },
+        error: function (res) {
+          console.log(res.message)
+        }
+      })
+
+    }
+
+    function getBussinessLineChart(title, series, cate, rotation) {
+      var options = {
+        lineStyle: {        // 系列级个性化折线样式
+          width: 2,
+          color: "#0099FF"
+        },
+        color: [
+          {
+            type: 'linear',
+            x: 0,
+            y: 1,
+            x2: 0,
+            y2: 0,
+            colorStops: [{
+              offset: 0, color: '#fff' // 0% 处的颜色
+            }, {
+              offset: 1, color: '#A1D5FF' // 100% 处的颜色
+            }],
+            globalCoord: false // 缺省为 false
+          },
+          {
+            type: 'linear',
+            x: 0,
+            y: 1,
+            x2: 0,
+            y2: 0,
+            colorStops: [{
+              offset: 0, color: '#fff' // 0% 处的颜色
+            }, {
+              offset: 1, color: '#F7B500' // 100% 处的颜色
+            }],
+            globalCoord: false // 缺省为 false
+          }
+        ],
+        //color:['#0099FF','#F7B500'],
+        tooltip: {
+          trigger: 'axis'
+        },
+        legend: {
+          x: 'center',
+          y: 'bottom',
+          data: [title]
+        },
+        grid: {
+          top: '10',
+          left: '0',
+          right: '10',
+          bottom: '30',
+          containLabel: true
+        },
+        calculable: true,
+        xAxis: [
+          {
+            type: 'category',
+            boundaryGap: false,
+            data: cate,
+            axisLabel: {//坐标轴刻度标签的相关设置。
+              interval: 0,
+              rotate: rotation
+            }
+          }
+        ],
+        yAxis: [
+          {
+            type: 'value',
+            axisLabel: {
+              formatter: '{value} %'
+            },
+            //网格样式
+            splitLine: {
+              show: true,
+              lineStyle: {
+                color: ['#f0f0f0'],
+                width: 1,
+                type: 'solid'
+              }
+            }
+          }
+        ],
+        series: series
+      }
+      var myChart1 = echarts.init(document.getElementById("business_char"));
+      myChart1.setOption(options, true);
+      $(window).resize(function () {
+        myChart1.resize()
+      })
+    }
+
+
+    function getAllActiveChar() {
+      var str = '';
+      str += '<li class="active_tab_li" active_list="module"><span class="tit_tab">模块点击</span></li>'
+      str += '<li active_list="task"><span class="tit_tab">任务模块</span></li>'
+      str += '<li active_list="article"><span class="tit_tab">文章模块</span></li>'
+      str += '<li active_list="test"><span class="tit_tab">考试模块</span></li>'
+      str += '<li active_list="schole"><span class="tit_tab">商学院</span></li>'
+      return str
+    }
+
+    function renderData() {
+      var data = [
+        {text: "昨日", value: 1},
+        {text: "近七天", value: 7},
+        {text: "30天", value: 30}
+      ];
+      $("#moduleClickNum").kendoDropDownList({
+        dataTextField: "text",
+        dataValueField: "value",
+        dataSource: data,
+        index: 0,
+        change: activeChange
+      });
+      getDataActive(1);
+      $("#tab_change li").click(function () {
+        $("#tab_change li").removeClass("active_tab_li");
+        $(this).addClass("active_tab_li");
+        $(".changeselect2").hide();
+        $(".charts_buss").css("height", "100%");
+        var active = $(this).attr("active_list");
+        if (active == "module") {//模版点击次数
+          $(".changeselect2").eq(0).show();
+          getModuleData($("#moduleClickNum").val());
+          $(".charts_buss").css("height", "265px");
+        } else if (active == "task") {//任务
+          getTaskDate();
+        } else if (active == "article") {//文章
+          getArticleDate();
+        } else if (active == "test") {//考试
+          getTestDate();
+        } else if (active == "schole") {//商学院
+          getScholeDate();
+        }
+      })
+    }
+
+    function activeChange() {
+      var value = $("#moduleClickNum").val();
+      getModuleData(value)
+    }
+
+    //左侧模版切换请求数据
+    function getDataActive(active) {
+      getModuleData(1)
+    }
+
+    //模版点击次数
+    function getModuleData(moduleChage) {
+      var title = "";
+      if (moduleChage == 1) {
+        title = "昨日模块点击数";
+      } else if (moduleChage == 7) {
+        title = "近7日模块点击数";
+      } else if (moduleChage == 30) {
+        title = "30日模块点击数";
+      }
+      var engineId = "cd01fc19-0632-4bef-8322-7a39b0b9bed1";
+      var accessToken = getQueryString("accessToken");
+      // var url=rootUrl+"report/engine/fetchdata.do?engineId="+engineId+"&accessToken="+accessToken;
+      var getUrl = "";
+      if (EngineIdToURL) {
+        for (var i = 0; i < EngineIdToURL.length; i++) {
+          if (engineId == EngineIdToURL[i].id) {
+            getUrl = EngineIdToURL[i].webUrl.replace("{###token###}", accessToken);
+          }
+        }
+      }
+      var url = getUrl;
+      $.ajax({
+        url: url,
+        contentType: "application/json; charset=utf-8",
+        data: JSON.stringify(
+          {
+            "pageIndex": 1,
+            "pageSize": 20,
+            "conditionValues": {"stm": Number(moduleChage)}
+          }
+        ),
+        type: "post",
+        dataType: 'json',
+        success: function (res) {
+          if (res.isSucceed) {
+            if (res.data.data) {
+              var rows = res.data.data.rows;
+              var series = [], categories = [], co = 0;
+              for (var i = 0; i < rows.length; i++) {
+
+                series.push(rows[i].y);
+                categories.push(rows[i].x)
+              }
+              var series = [
+                {
+                  name: "模块点击数",
+                  type: 'bar',
+                  barWidth: 10,
+                  itemStyle: {
+                    normal: {
+                      label: {
+                        //show: true, //开启显示
+                        position: 'top', //在上方显示
+                        textStyle: { //数值样式
+                          color: '#444',
+                          fontSize: 12
+                        }
+                      }
+                    }
+                  },
+                  data: series
+                }
+              ];
+              var categories = categories;
+              activeModuleChars("模块点击数", series, categories);
+            } else {
+              activeModuleChars("模块点击数", [], []);
+            }
+
+          } else {
+            console.log(res.message)
+          }
+        },
+        error: function (res) {
+          console.log(res.message)
+        }
+      })
+    }
+
+    //任务
+    function getTaskDate() {
+      var engineId = "3da3da78-dd56-42aa-aee5-6941a85dee10";
+      var accessToken = getQueryString("accessToken");
+      //var url=rootUrl+"report/engine/fetchdata.do?engineId="+engineId+"&accessToken="+accessToken;
+      var getUrl = "";
+      if (EngineIdToURL) {
+        for (var i = 0; i < EngineIdToURL.length; i++) {
+          if (engineId == EngineIdToURL[i].id) {
+            getUrl = EngineIdToURL[i].webUrl.replace("{###token###}", accessToken);
+          }
+        }
+      }
+      var url = getUrl;
+      $.ajax({
+        url: url,
+        contentType: "application/json; charset=utf-8",
+        type: "post",
+        dataType: 'json',
+        success: function (res) {
+          if (res.isSucceed) {
+            if (res.data.data) {
+              var rows = res.data.data.rows;
+              var series = [], categories = [];
+              for (var i = 0; i < rows.length; i++) {
+                series.push(rows[i].y);
+                categories.push(rows[i].x)
+              }
+              var series = [
+                {
+                  name: "新增任务数",
+                  type: 'bar',
+                  barWidth: 10,
+                  itemStyle: {
+                    normal: {
+                      label: {
+                        //show: true, //开启显示
+                        position: 'top', //在上方显示
+                        textStyle: { //数值样式
+                          color: '#444',
+                          fontSize: 12
+                        }
+                      }
+                    }
+                  },
+                  data: series
+                }
+              ];
+              var categories = categories;
+              activeModuleChars("新增任务数", series, categories);
+            } else {
+              activeModuleChars("新增任务数", [], []);
+            }
+          } else {
+            console.log(res.message)
+          }
+        },
+        error: function (res) {
+          console.log(res.message)
+        }
+      })
+
+    }
+
+    //文章
+    function getArticleDate() {
+      var engineId = "9320f60f-cd12-4d63-9d76-2d3d8a3d58ec";
+      var accessToken = getQueryString("accessToken");
+      //var url=rootUrl+"report/engine/fetchdata.do?engineId="+engineId+"&accessToken="+accessToken;
+      var getUrl = "";
+      if (EngineIdToURL) {
+        for (var i = 0; i < EngineIdToURL.length; i++) {
+          if (engineId == EngineIdToURL[i].id) {
+            getUrl = EngineIdToURL[i].webUrl.replace("{###token###}", accessToken);
+          }
+        }
+      }
+      var url = getUrl;
+      $.ajax({
+        url: url,
+        contentType: "application/json; charset=utf-8",
+        type: "post",
+        dataType: 'json',
+        success: function (res) {
+          if (res.isSucceed) {
+            if (res.data.data) {
+              var rows = res.data.data.rows;
+              var series = [], categories = [];
+              for (var i = 0; i < rows.length; i++) {
+                series.push(rows[i].y);
+                categories.push(rows[i].x)
+              }
+              var series = [
+                {
+                  name: "新增文章数",
+                  type: 'bar',
+                  barWidth: 10,
+                  itemStyle: {
+                    normal: {
+                      label: {
+                        //show: true, //开启显示
+                        position: 'top', //在上方显示
+                        textStyle: { //数值样式
+                          color: '#444',
+                          fontSize: 12
+                        }
+                      }
+                    }
+                  },
+                  data: series
+                }
+              ];
+              var categories = categories;
+              activeModuleChars("新增文章数", series, categories);
+            } else {
+              activeModuleChars("新增文章数", [], []);
+            }
+          } else {
+            console.log(res.message)
+          }
+        },
+        error: function (res) {
+          console.log(res.message)
+        }
+      })
+    }
+
+    //考试
+    function getTestDate() {
+      var engineId = "07603c47-8621-41ef-b114-4f764b86cc2c";
+      var accessToken = getQueryString("accessToken");
+      //var url=rootUrl+"report/engine/fetchdata.do?engineId="+engineId+"&accessToken="+accessToken;
+      var getUrl = "";
+      if (EngineIdToURL) {
+        for (var i = 0; i < EngineIdToURL.length; i++) {
+          if (engineId == EngineIdToURL[i].id) {
+            getUrl = EngineIdToURL[i].webUrl.replace("{###token###}", accessToken);
+          }
+        }
+      }
+      var url = getUrl;
+      $.ajax({
+        url: url,
+        contentType: "application/json; charset=utf-8",
+        type: "post",
+        dataType: 'json',
+        success: function (res) {
+          if (res.isSucceed) {
+            if (res.data.data) {
+              var rows = res.data.data.rows;
+              var series = [], categories = [];
+              for (var i = 0; i < rows.length; i++) {
+                series.push(rows[i].y);
+                categories.push(rows[i].x)
+              }
+              var series = [
+                {
+                  name: "新增考试数",
+                  type: 'bar',
+                  barWidth: 10,
+                  itemStyle: {
+                    normal: {
+                      label: {
+                        //show: true, //开启显示
+                        position: 'top', //在上方显示
+                        textStyle: { //数值样式
+                          color: '#444',
+                          fontSize: 12
+                        }
+                      }
+                    }
+                  },
+                  data: series
+                }
+              ];
+              var categories = categories;
+              activeModuleChars("新增考试数", series, categories);
+            } else {
+              activeModuleChars("新增考试数", [], []);
+            }
+          } else {
+            console.log(res.message)
+          }
+        },
+        error: function (res) {
+          console.log(res.message)
+        }
+      })
+    }
+
+    //商学院
+    function getScholeDate() {
+      var engineId = "264d05ab-65eb-4f63-99ea-b35a9fdc7f3a";
+      var accessToken = getQueryString("accessToken");
+      //var url=rootUrl+"report/engine/fetchdata.do?engineId="+engineId+"&accessToken="+accessToken;
+      var getUrl = "";
+      if (EngineIdToURL) {
+        for (var i = 0; i < EngineIdToURL.length; i++) {
+          if (engineId == EngineIdToURL[i].id) {
+            getUrl = EngineIdToURL[i].webUrl.replace("{###token###}", accessToken);
+          }
+        }
+      }
+      var url = getUrl;
+      $.ajax({
+        url: url,
+        contentType: "application/json; charset=utf-8",
+        type: "post",
+        dataType: 'json',
+        success: function (res) {
+          if (res.isSucceed) {
+            if (res.data.data) {
+              var rows = res.data.data.rows;
+              var series = [], categories = [];
+              for (var i = 0; i < rows.length; i++) {
+                series.push(rows[i].y);
+                categories.push(rows[i].x)
+              }
+              var series = [
+                {
+                  name: "学习时长(单位：分钟)",
+                  type: 'bar',
+                  barWidth: 10,
+                  itemStyle: {
+                    normal: {
+                      label: {
+                        //show: true, //开启显示
+                        position: 'top', //在上方显示
+                        textStyle: { //数值样式
+                          color: '#444',
+                          fontSize: 12
+                        }
+                      }
+                    }
+                  },
+                  data: series
+                }
+              ];
+              var categories = categories;
+              activeModuleChars("学习时长(单位：分钟)", series, categories);
+            } else {
+              activeModuleChars("学习时长(单位：分钟)", [], []);
+            }
+          } else {
+            console.log(res.message)
+          }
+        },
+        error: function (res) {
+          console.log(res.message)
+        }
+      })
+    }
+
+    function activeModuleChars(title, series, categoryAxis) {
+      var rotation = 0;
+      if (categoryAxis.length > 10) {
+        rotation = 30;
+      }
+      var options = {
+
+        color: ['#0099FF', '#F7B500'],
+        tooltip: {
+          trigger: 'axis'
+        },
+        grid: {
+          top: '20',
+          left: '10',
+          right: '20',
+          bottom: '40',
+          containLabel: true
+        },
+        legend: {
+          x: 'center',
+          y: 'bottom',
+          data: [title]
+        },
+        xAxis: [
+          {
+            type: 'category',
+            data: categoryAxis,
+            axisLabel: {//坐标轴刻度标签的相关设置。
+              interval: 0,
+              rotate: rotation
+            }
+          }
+        ],
+        yAxis: [
+          {
+            type: 'value',
+            minInterval: 1,
+            //网格样式
+            splitLine: {
+              show: true,
+              lineStyle: {
+                color: ['#f0f0f0'],
+                width: 1,
+                type: 'solid'
+              }
+            }
+          }
+        ],
+        series: series
+      }
+      var myChart = echarts.init(document.getElementById("moduleChange"));
+      myChart.setOption(options, true);
+      $(window).resize(function () {
+        myChart.resize()
+      })
+    }
+
+    function getAllEnterList() {
+      var str = '';
+      var listColor = [{
+        id: 1,
+        color: "#7197FF",
+        icon: "icon-shishigongju"
+      },
+        {
+          id: 2,
+          color: "#FFBA24",
+          icon: "icon-Group"
+        },
+        {
+          id: 3,
+          color: "#EB8989",
+          icon: "icon-shiwujianglixinxi"
+        },
+        {
+          id: 4,
+          color: "#EB8989",
+          icon: "icon-shiwufabu"
+        },
+        {
+          id: 5,
+          color: "#7197FF",
+          icon: "icon-lianjie"
+        },
+        {
+          id: 6,
+          color: "#61D1B5",
+          icon: "icon-duihuan"
+        },
+        {
+          id: 7,
+          color: "#61D1B5",
+          icon: "icon-diannao"
+        },
+        {
+          id: 8,
+          color: "#FFBA24",
+          icon: "icon-shezhi"
+        }];
+      var accessToken = getQueryString("accessToken");
+      var phost = "http://bms.chaojidaogou.com";
+      //var phost="http://172.16.0.200:8000";
+      var url = phost + "/shopguide/api/auth/getQuickModuleByUser?accessToken=" + accessToken;
+      $.ajax({
+        url: url,
+        data: JSON.stringify(),
+        type: "get",
+        dataType: 'json',
+        success: function (res) {
+          //console.log(res)
+          if (res.code == '102') {
+            $(".enter_link").empty();
+            var dataObject = res.dataObject;
+            if (dataObject.length > 0) {
+              for (var i = 0; i < dataObject.length; i++) {
+                str += "<li class='list_li' onclick='toEnterDetail(this," + JSON.stringify(dataObject[i]) + ")' data-title='" + dataObject[i].modName + "'><div class='enter_link_each'><div class='enter_img iconfont " + listColor[i].icon + "' style='background-color:" + listColor[i].color + "'></div><div class='enter_link_tit'>" + dataObject[i].modName + "</div></div></li>"
+              }
+              //console.log(str)
+            }
+            $(".enter_link").append(str)
+          } else {
+            console.log(res.dataObject.value)
+          }
+        },
+        error: function (res) {
+          alert(res.dataObject.value)
+        }
+      })
+    }
+
+    function toEnterDetail(list, data) {
+      var has = $(list).find(".posi_box").attr("data-show");
+      if (has == "true") {
+        return
+      }
+      //console.log(has)
+      if (data.length == 0) {
+        return;
+      }
+      var objPar = {skip: true, item: data};
+      //console.log(objPar)
+      window.parent.postMessage(JSON.stringify(objPar), '*');
+    }
+
+    function addEnter() {
+      console.log("00000")
+      var objPar = {
+        Jump: true,
+        url: '/welcome',
+        data: {
+          type: 2
+        }
+      }
+      window.parent.postMessage(JSON.stringify(objPar), '*');
+    }
+    function toWelcomeType2(){
+      console.log("00000")
+      var objPar = {
+        Jump: true,
+        url: '/welcome',
+        data: {
+          type: 2
+        }
+      }
+      window.parent.postMessage(JSON.stringify(objPar), '*');
+    }
+
+
+  </script>
+
 </html>

@@ -18,8 +18,8 @@
     <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">
         <property name="driverClassName" value="${driver}"/>
         <property name="url" value="${url}"/>
-        <property name="username" value="${name}"/>
-        <property name="password" value="${pwd}"/>
+        <property name="username" value="${uName}"/>
+        <property name="password" value="${uPwd}"/>
 
         <property name="filters" value="stat"/>
 

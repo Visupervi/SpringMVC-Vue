@@ -5,7 +5,7 @@
 <generatorConfiguration>
     <properties resource="DbConfig.properties"></properties>
     <!--<classPathEntry location="${jdbc.driverLocation}"/>-->
-    <classPathEntry location="D:\repository\mysql\mysql-connector-java\8.0.11\mysql-connector-java-8.0.11.jar" />
+    <classPathEntry location="/Users/Visupervi/.m2/repository/mysql/mysql-connector-java/8.0.21/mysql-connector-java-8.0.21.jar" />
     <context id="MysqlTable2" targetRuntime="Mybatis3">
 
         <commentGenerator>
@@ -16,8 +16,10 @@
         <!-- 数据库连接配置 -->
         <jdbcConnection driverClass="${driver}"
                         connectionURL="${url}"
-                        userId="${name}"
-                        password="${pwd}"/>
+                        userId="${uName}"
+                        password="${uPwd}">
+            <property name="nullCatalogMeansCurrent" value="true"></property>
+        </jdbcConnection>
         <!--jdbcConnection driverClass="com.mysql.jdbc.Driver"
                         connectionURL="jdbc:mysql://localhost:3306/test"
                         userId="root"
@@ -36,10 +38,10 @@
                             targetProject="src/main/java"/>
 
         <!-- 实体包对应映射文件位置及名称，默认存放在src目录下 -->
-        <sqlMapGenerator targetPackage="com.HopeRun.SSM.Crm.dao.mappers" targetProject="src/main/resources"/>
+        <sqlMapGenerator targetPackage="com.HopeRun.SSM.Crm.dao.mappers" targetProject="src/main/java"/>
         <javaClientGenerator type="XMLMAPPER"
                              targetPackage="com.HopeRun.SSM.Crm.dao.mappers"
-                             targetProject="src/main/resources">
+                             targetProject="src/main/java">
             <!-- enableSubPackages:是否让schema作为包的后缀 -->
             <property name="enableSubPackages" value="false" />
         </javaClientGenerator>
@@ -50,15 +52,15 @@
             enableCountByExample、enableSelectByExample、enableDeleteByExample、enableUpdateByExample、selectByExampleQueryId：
             去除自动生成的例子
         -->
-        <table schema="crm" tableName="base_dict" enableCountByExample="false" enableSelectByExample="false"
+        <table schema="crm" tableName="tbl_trackPoint" enableCountByExample="false" enableSelectByExample="false"
                enableDeleteByExample="false" enableUpdateByExample="false" selectByExampleQueryId="false">
         </table>
-        <table schema="crm" tableName="sys_user" enableCountByExample="false" enableSelectByExample="false"
-               enableDeleteByExample="false" enableUpdateByExample="false" selectByExampleQueryId="false">
-        </table>
-        <table schema="crm" tableName="customer" enableCountByExample="false" enableSelectByExample="false"
-               enableDeleteByExample="false" enableUpdateByExample="false" selectByExampleQueryId="false">
-        </table>
+<!--        <table schema="crm" tableName="sys_user" enableCountByExample="false" enableSelectByExample="false"-->
+<!--               enableDeleteByExample="false" enableUpdateByExample="false" selectByExampleQueryId="false">-->
+<!--        </table>-->
+<!--        <table schema="crm" tableName="customer" enableCountByExample="false" enableSelectByExample="false"-->
+<!--               enableDeleteByExample="false" enableUpdateByExample="false" selectByExampleQueryId="false">-->
+<!--        </table>-->
 
     </context>
 </generatorConfiguration>

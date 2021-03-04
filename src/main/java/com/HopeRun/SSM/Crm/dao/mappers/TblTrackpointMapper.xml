@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.HopeRun.SSM.Crm.dao.mappers.TblTrackpointMapper">
+  <resultMap id="BaseResultMap" type="com.HopeRun.SSM.Crm.entity.TblTrackpoint">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+    <result column="userAgent" jdbcType="VARCHAR" property="useragent" />
+    <result column="networkState" jdbcType="VARCHAR" property="networkstate" />
+    <result column="ip" jdbcType="VARCHAR" property="ip" />
+    <result column="eventType" jdbcType="VARCHAR" property="eventtype" />
+    <result column="userId" jdbcType="INTEGER" property="userid" />
+    <result column="userType" jdbcType="VARCHAR" property="usertype" />
+    <result column="timeStamp" jdbcType="TIMESTAMP" property="timestamp" />
+    <result column="widgetType" jdbcType="VARCHAR" property="widgettype" />
+    <result column="traceId" jdbcType="VARCHAR" property="traceid" />
+    <result column="spanId" jdbcType="VARCHAR" property="spanid" />
+    <result column="parentId" jdbcType="VARCHAR" property="parentid" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, url, userAgent, networkState, ip, eventType, userId, userType, timeStamp, widgetType, 
+    traceId, spanId, parentId
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from tbl_trackPoint
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, url, userAgent,networkState, ip, eventType,userId, userType, timeStamp,widgetType, traceId, spanId, parentId from tbl_trackPoint group by eventType, widgetType
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tbl_trackPoint
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.HopeRun.SSM.Crm.entity.TblTrackpoint">
+    insert into tbl_trackPoint (id, url, userAgent, 
+      networkState, ip, eventType, 
+      userId, userType, timeStamp, 
+      widgetType, traceId, spanId, 
+      parentId)
+    values (#{id,jdbcType=INTEGER}, #{url,jdbcType=VARCHAR}, #{useragent,jdbcType=VARCHAR}, 
+      #{networkstate,jdbcType=VARCHAR}, #{ip,jdbcType=VARCHAR}, #{eventtype,jdbcType=VARCHAR}, 
+      #{userid,jdbcType=INTEGER}, #{usertype,jdbcType=VARCHAR}, #{timestamp,jdbcType=TIMESTAMP}, 
+      #{widgettype,jdbcType=VARCHAR}, #{traceid,jdbcType=VARCHAR}, #{spanid,jdbcType=VARCHAR}, 
+      #{parentid,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.HopeRun.SSM.Crm.entity.TblTrackpoint">
+    insert into tbl_trackPoint
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="url != null">
+        url,
+      </if>
+      <if test="useragent != null">
+        userAgent,
+      </if>
+      <if test="networkstate != null">
+        networkState,
+      </if>
+      <if test="ip != null">
+        ip,
+      </if>
+      <if test="eventtype != null">
+        eventType,
+      </if>
+      <if test="userid != null">
+        userId,
+      </if>
+      <if test="usertype != null">
+        userType,
+      </if>
+      <if test="timestamp != null">
+        timeStamp,
+      </if>
+      <if test="widgettype != null">
+        widgetType,
+      </if>
+      <if test="traceid != null">
+        traceId,
+      </if>
+      <if test="spanid != null">
+        spanId,
+      </if>
+      <if test="parentid != null">
+        parentId,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="url != null">
+        #{url,jdbcType=VARCHAR},
+      </if>
+      <if test="useragent != null">
+        #{useragent,jdbcType=VARCHAR},
+      </if>
+      <if test="networkstate != null">
+        #{networkstate,jdbcType=VARCHAR},
+      </if>
+      <if test="ip != null">
+        #{ip,jdbcType=VARCHAR},
+      </if>
+      <if test="eventtype != null">
+        #{eventtype,jdbcType=VARCHAR},
+      </if>
+      <if test="userid != null">
+        #{userid,jdbcType=INTEGER},
+      </if>
+      <if test="usertype != null">
+        #{usertype,jdbcType=VARCHAR},
+      </if>
+      <if test="timestamp != null">
+        #{timestamp,jdbcType=TIMESTAMP},
+      </if>
+      <if test="widgettype != null">
+        #{widgettype,jdbcType=VARCHAR},
+      </if>
+      <if test="traceid != null">
+        #{traceid,jdbcType=VARCHAR},
+      </if>
+      <if test="spanid != null">
+        #{spanid,jdbcType=VARCHAR},
+      </if>
+      <if test="parentid != null">
+        #{parentid,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.HopeRun.SSM.Crm.entity.TblTrackpoint">
+    update tbl_trackPoint
+    <set>
+      <if test="url != null">
+        url = #{url,jdbcType=VARCHAR},
+      </if>
+      <if test="useragent != null">
+        userAgent = #{useragent,jdbcType=VARCHAR},
+      </if>
+      <if test="networkstate != null">
+        networkState = #{networkstate,jdbcType=VARCHAR},
+      </if>
+      <if test="ip != null">
+        ip = #{ip,jdbcType=VARCHAR},
+      </if>
+      <if test="eventtype != null">
+        eventType = #{eventtype,jdbcType=VARCHAR},
+      </if>
+      <if test="userid != null">
+        userId = #{userid,jdbcType=INTEGER},
+      </if>
+      <if test="usertype != null">
+        userType = #{usertype,jdbcType=VARCHAR},
+      </if>
+      <if test="timestamp != null">
+        timeStamp = #{timestamp,jdbcType=TIMESTAMP},
+      </if>
+      <if test="widgettype != null">
+        widgetType = #{widgettype,jdbcType=VARCHAR},
+      </if>
+      <if test="traceid != null">
+        traceId = #{traceid,jdbcType=VARCHAR},
+      </if>
+      <if test="spanid != null">
+        spanId = #{spanid,jdbcType=VARCHAR},
+      </if>
+      <if test="parentid != null">
+        parentId = #{parentid,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.HopeRun.SSM.Crm.entity.TblTrackpoint">
+    update tbl_trackPoint
+    set url = #{url,jdbcType=VARCHAR},
+      userAgent = #{useragent,jdbcType=VARCHAR},
+      networkState = #{networkstate,jdbcType=VARCHAR},
+      ip = #{ip,jdbcType=VARCHAR},
+      eventType = #{eventtype,jdbcType=VARCHAR},
+      userId = #{userid,jdbcType=INTEGER},
+      userType = #{usertype,jdbcType=VARCHAR},
+      timeStamp = #{timestamp,jdbcType=TIMESTAMP},
+      widgetType = #{widgettype,jdbcType=VARCHAR},
+      traceId = #{traceid,jdbcType=VARCHAR},
+      spanId = #{spanid,jdbcType=VARCHAR},
+      parentId = #{parentid,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>
