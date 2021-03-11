@@ -9,78 +9,14 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8d169798-ab63-407b-ac06-97d7a4eecc17" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/HopeRun/SSM/Crm/controller/GetAllPointController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/HopeRun/SSM/Crm/controller/TrackPointController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/HopeRun/SSM/Crm/controller/WebSocketController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/HopeRun/SSM/Crm/dao/mappers/TblTrackpointMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/HopeRun/SSM/Crm/dao/mappers/TblTrackpointMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/HopeRun/SSM/Crm/entity/TblTrackpoint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/HopeRun/SSM/Crm/service/TrackPointService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/HopeRun/SSM/Crm/service/serviceImpl/TrackPointServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMMaven.war" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMMaven/WEB-INF/classes/com/HopeRun/SSM/Crm/controller/GetAllPointController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMMaven/WEB-INF/classes/com/HopeRun/SSM/Crm/controller/TrackPointController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMMaven/WEB-INF/classes/com/HopeRun/SSM/Crm/controller/WebSocketController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMMaven/WEB-INF/classes/com/HopeRun/SSM/Crm/dao/mappers/TblTrackpointMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMMaven/WEB-INF/classes/com/HopeRun/SSM/Crm/dao/mappers/TblTrackpointMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMMaven/WEB-INF/classes/com/HopeRun/SSM/Crm/entity/TblTrackpoint.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMMaven/WEB-INF/classes/com/HopeRun/SSM/Crm/service/TrackPointService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMMaven/WEB-INF/classes/com/HopeRun/SSM/Crm/service/serviceImpl/TrackPointServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMMaven/WEB-INF/lib/apiguardian-api-1.1.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMMaven/WEB-INF/lib/druid-1.1.21.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMMaven/WEB-INF/lib/junit-jupiter-api-5.8.0-M1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMMaven/WEB-INF/lib/junit-platform-commons-1.8.0-M1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMMaven/WEB-INF/lib/mysql-connector-java-8.0.19.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMMaven/WEB-INF/lib/mysql-connector-java-8.0.21.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMMaven/WEB-INF/lib/opentest4j-1.2.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMMaven/WEB-INF/lib/protobuf-java-3.11.4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SSMMaven/WEB-INF/lib/protobuf-java-3.6.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/HopeRun/SSM/Crm/controller/GetAllPointController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/HopeRun/SSM/Crm/controller/TrackPointController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/HopeRun/SSM/Crm/controller/WebSocketController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/HopeRun/SSM/Crm/dao/mappers/TblTrackpointMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/HopeRun/SSM/Crm/dao/mappers/TblTrackpointMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/HopeRun/SSM/Crm/entity/TblTrackpoint.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/HopeRun/SSM/Crm/service/TrackPointService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/HopeRun/SSM/Crm/service/serviceImpl/TrackPointServiceImpl.class" afterDir="false" />
+    <list default="true" id="8d169798-ab63-407b-ac06-97d7a4eecc17" name="Default" comment="refactor(SSMMaven): 添加接口">
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/SSMMaven_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/SSMMaven_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_1_1_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_protobuf_protobuf_java_2_6_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_11.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SSMMaven.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SSMMaven.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/HopeRun/SSM/Crm/controller/UserLoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HopeRun/SSM/Crm/controller/UserLoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/HopeRun/SSM/Crm/dao/BaseDiceDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/HopeRun/SSM/Crm/service/UserLoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HopeRun/SSM/Crm/service/UserLoginService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/HopeRun/SSM/Crm/service/serviceImpl/UserLoginServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HopeRun/SSM/Crm/service/serviceImpl/UserLoginServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/DbConfig.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/DbConfig.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/config/spring/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/spring/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/crmWeb/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/crmWeb/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSMMaven/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSMMaven/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSMMaven/WEB-INF/classes/DbConfig.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSMMaven/WEB-INF/classes/DbConfig.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSMMaven/WEB-INF/classes/com/HopeRun/SSM/Crm/controller/UserLoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSMMaven/WEB-INF/classes/com/HopeRun/SSM/Crm/controller/UserLoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSMMaven/WEB-INF/classes/com/HopeRun/SSM/Crm/dao/BaseDiceDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSMMaven/WEB-INF/classes/com/HopeRun/SSM/Crm/service/serviceImpl/UserLoginServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSMMaven/WEB-INF/classes/com/HopeRun/SSM/Crm/service/serviceImpl/UserLoginServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSMMaven/WEB-INF/classes/config/spring/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSMMaven/WEB-INF/classes/config/spring/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSMMaven/WEB-INF/classes/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSMMaven/WEB-INF/classes/generatorConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSMMaven/WEB-INF/lib/apiguardian-api-1.0.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSMMaven/WEB-INF/lib/druid-1.1.12.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSMMaven/WEB-INF/lib/junit-jupiter-api-5.4.0-M1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSMMaven/WEB-INF/lib/junit-platform-commons-1.4.0-M1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSMMaven/WEB-INF/lib/mysql-connector-java-8.0.11.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSMMaven/WEB-INF/lib/opentest4j-1.1.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSMMaven/WEB-INF/lib/protobuf-java-2.6.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSMMaven/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSMMaven/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSMMaven/crmWeb/build/webpack.prod.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSMMaven/crmWeb/build/webpack.prod.conf.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSMMaven/crmWeb/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSMMaven/crmWeb/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DbConfig.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/DbConfig.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/HopeRun/SSM/Crm/controller/UserLoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/HopeRun/SSM/Crm/controller/UserLoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/HopeRun/SSM/Crm/dao/BaseDiceDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/HopeRun/SSM/Crm/service/serviceImpl/UserLoginServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/HopeRun/SSM/Crm/service/serviceImpl/UserLoginServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/config/mybatis/sqlMapperConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/config/spring/applicationContext.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/config/springmvc/springmvc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/generatorConfig.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -899,17 +835,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -1195,8 +1120,18 @@
       <workItem from="1551094270304" duration="529000" />
       <workItem from="1551106605214" duration="1529000" />
       <workItem from="1551108785727" duration="19747000" />
-      <workItem from="1614830318261" duration="696000" />
+      <workItem from="1614830318261" duration="2001000" />
+      <workItem from="1614843835276" duration="17000" />
+      <workItem from="1615289616637" duration="175000" />
     </task>
+    <task id="LOCAL-00001" summary="refactor(SSMMaven): 添加接口">
+      <created>1614833465688</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1614833465688</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -1292,6 +1227,11 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="refactor(SSMMaven): 添加接口" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor(SSMMaven): 添加接口" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
