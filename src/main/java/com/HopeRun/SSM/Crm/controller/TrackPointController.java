@@ -7,6 +7,13 @@ import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
+/**
+ * @author: visupervi
+ * @Date: 2021/3/11 1:59 下午
+ * @param:
+ * @return:
+ * @Description:
+ */
 
 @CrossOrigin(origins = "*", maxAge = 3600)
 @Controller
@@ -18,6 +25,7 @@ public class TrackPointController {
     @RequestMapping(value = "/setPointData",method = {RequestMethod.POST})
     @ResponseBody
     public String setPontData(@RequestBody String string){
+        logger.info(string);
         TblTrackpoint tblTrackpoint = JSONObject.parseObject(string,TblTrackpoint.class);
         logger.info("tblTrackpoint"+tblTrackpoint);
         return trackPointService.getTrackData(tblTrackpoint);

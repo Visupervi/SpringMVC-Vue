@@ -29,6 +29,8 @@ public class TblTrackpoint {
 
     private String parentid;
 
+    private String elementid;
+
     public Integer getId() {
         return id;
     }
@@ -131,5 +133,13 @@ public class TblTrackpoint {
 
     public void setParentid(String parentid) {
         this.parentid = parentid;
+    }
+
+    public String getElementid() {
+        return elementid;
+    }
+
+    public void setElementid(String elementid) {
+        this.elementid = elementid;
     }
 }

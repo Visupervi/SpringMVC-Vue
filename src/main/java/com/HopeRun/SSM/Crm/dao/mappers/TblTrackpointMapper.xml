@@ -15,35 +15,42 @@
     <result column="traceId" jdbcType="VARCHAR" property="traceid" />
     <result column="spanId" jdbcType="VARCHAR" property="spanid" />
     <result column="parentId" jdbcType="VARCHAR" property="parentid" />
+    <result column="elementId" jdbcType="VARCHAR" property="elementid" />
   </resultMap>
   <sql id="Base_Column_List">
-    id, url, userAgent, networkState, ip, eventType, userId, userType, timeStamp, widgetType, 
-    traceId, spanId, parentId
+    id, url, userAgent, networkState, ip, eventType, userId, userType, timeStamp, widgetType,
+    traceId, spanId, parentId, elementId
   </sql>
   <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
-    select 
+    select
     <include refid="Base_Column_List" />
     from tbl_trackPoint
     where id = #{id,jdbcType=INTEGER}
   </select>
   <select id="selectAll" resultMap="BaseResultMap">
-    select id, url, userAgent,networkState, ip, eventType,userId, userType, timeStamp,widgetType, traceId, spanId, parentId from tbl_trackPoint group by eventType, widgetType
+    select id, url, userAgent,networkState, ip, eventType,userId, userType, timeStamp,widgetType, traceId, spanId, parentId, elementId from tbl_trackPoint group by eventType, widgetType
+  </select>
+
+  <select id="selectByWidgetType" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from tbl_trackPoint where eventtype = #{eventtype,jdbcType=VARCHAR}
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
     delete from tbl_trackPoint
     where id = #{id,jdbcType=INTEGER}
   </delete>
   <insert id="insert" parameterType="com.HopeRun.SSM.Crm.entity.TblTrackpoint">
-    insert into tbl_trackPoint (id, url, userAgent, 
-      networkState, ip, eventType, 
-      userId, userType, timeStamp, 
-      widgetType, traceId, spanId, 
-      parentId)
-    values (#{id,jdbcType=INTEGER}, #{url,jdbcType=VARCHAR}, #{useragent,jdbcType=VARCHAR}, 
-      #{networkstate,jdbcType=VARCHAR}, #{ip,jdbcType=VARCHAR}, #{eventtype,jdbcType=VARCHAR}, 
-      #{userid,jdbcType=INTEGER}, #{usertype,jdbcType=VARCHAR}, #{timestamp,jdbcType=TIMESTAMP}, 
-      #{widgettype,jdbcType=VARCHAR}, #{traceid,jdbcType=VARCHAR}, #{spanid,jdbcType=VARCHAR}, 
-      #{parentid,jdbcType=VARCHAR})
+    insert into tbl_trackPoint (id, url, userAgent,
+      networkState, ip, eventType,
+      userId, userType, timeStamp,
+      widgetType, traceId, spanId,
+      parentId, elementId)
+    values (#{id,jdbcType=INTEGER}, #{url,jdbcType=VARCHAR}, #{useragent,jdbcType=VARCHAR},
+      #{networkstate,jdbcType=VARCHAR}, #{ip,jdbcType=VARCHAR}, #{eventtype,jdbcType=VARCHAR},
+      #{userid,jdbcType=INTEGER}, #{usertype,jdbcType=VARCHAR}, #{timestamp,jdbcType=TIMESTAMP},
+      #{widgettype,jdbcType=VARCHAR}, #{traceid,jdbcType=VARCHAR}, #{spanid,jdbcType=VARCHAR},
+      #{parentid,jdbcType=VARCHAR}, #{elementid,jdbcType=VARCHAR})
   </insert>
   <insert id="insertSelective" parameterType="com.HopeRun.SSM.Crm.entity.TblTrackpoint">
     insert into tbl_trackPoint
@@ -87,6 +94,9 @@
       <if test="parentid != null">
         parentId,
       </if>
+      <if test="elementid != null">
+        elementId,
+      </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
       <if test="id != null">
@@ -127,6 +137,9 @@
       </if>
       <if test="parentid != null">
         #{parentid,jdbcType=VARCHAR},
+      </if>
+      <if test="elementid != null">
+        #{elementid,jdbcType=VARCHAR},
       </if>
     </trim>
   </insert>
@@ -169,6 +182,9 @@
       <if test="parentid != null">
         parentId = #{parentid,jdbcType=VARCHAR},
       </if>
+      <if test="elementid != null">
+        elementId = #{elementid,jdbcType=VARCHAR},
+      </if>
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
@@ -185,7 +201,8 @@
       widgetType = #{widgettype,jdbcType=VARCHAR},
       traceId = #{traceid,jdbcType=VARCHAR},
       spanId = #{spanid,jdbcType=VARCHAR},
-      parentId = #{parentid,jdbcType=VARCHAR}
+      parentId = #{parentid,jdbcType=VARCHAR},
+      elementId = #{elementid,jdbcType=VARCHAR}
     where id = #{id,jdbcType=INTEGER}
   </update>
 </mapper>

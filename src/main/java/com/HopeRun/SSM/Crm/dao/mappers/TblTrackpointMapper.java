@@ -12,6 +12,7 @@ public interface TblTrackpointMapper {
     int insertSelective(TblTrackpoint record);
 
     TblTrackpoint selectByPrimaryKey(Integer id);
+    List<TblTrackpoint> selectByWidgetType(String widgetType);
     List<TblTrackpoint> selectAll();
     int updateByPrimaryKeySelective(TblTrackpoint record);
 
